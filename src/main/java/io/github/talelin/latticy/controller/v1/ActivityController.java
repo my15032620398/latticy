@@ -44,6 +44,7 @@ public class ActivityController {
     public CreatedVO create(@RequestBody @Validated ActivityDTO dto) {
         activityService.create(dto);
         return new CreatedVO();
+
     }
 
     @PutMapping("/{id}")

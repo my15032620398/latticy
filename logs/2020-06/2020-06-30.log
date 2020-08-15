@@ -1,0 +1,788 @@
+2020-06-30 12:58:26.408 [main] INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication on DESKTOP-CN6PMV5 with PID 36220 (E:\Mfans\CMS\deep-forest\target\classes started by mengyue in E:\Mfans\CMS\deep-forest)
+2020-06-30 12:58:26.413 [main] INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2020-06-30 12:58:27.560 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-30 12:58:27.861 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2020-06-30 12:58:27.872 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2020-06-30 12:58:27.873 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-30 12:58:27.874 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-06-30 12:58:28.001 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-30 12:58:28.002 [main] DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-06-30 12:58:28.002 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1535 ms
+2020-06-30 12:58:28.023 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2020-06-30 12:58:28.024 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2020-06-30 12:58:28.359 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-06-30 12:58:28.562 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-06-30 12:58:31.688 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-30 12:58:31.707 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-06-30 12:58:31.778 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 120 mappings in 'requestMappingHandlerMapping'
+2020-06-30 12:58:31.801 [main] DEBUG o.s.web.servlet.config.annotation.WebMvcConfigurer - Default resource handling disabled
+2020-06-30 12:58:31.814 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/assets/**] in 'resourceHandlerMapping'
+2020-06-30 12:58:31.826 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-06-30 12:58:32.085 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:32.106 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询Banner item(String), Banner item(String)
+2020-06-30 12:58:32.216 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:32.218 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:32.219 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除六宫格(String), 六宫格(String)
+2020-06-30 12:58:32.220 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:32.226 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:32.227 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 删除六宫格(String), 六宫格(String)
+2020-06-30 12:58:32.700 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:32.704 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:32.705 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询所有日志(String), 日志(String)
+2020-06-30 12:58:32.706 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:32.708 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:32.709 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建Banner(String), Banner(String)
+2020-06-30 12:58:32.710 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:32.712 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:32.712 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 搜索日志(String), 日志(String)
+2020-06-30 12:58:32.714 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:32.716 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:32.716 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除活动(String), 活动(String)
+2020-06-30 12:58:32.717 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:32.719 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:32.720 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新六宫格(String), 六宫格(String)
+2020-06-30 12:58:32.721 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:32.722 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:32.723 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 更新六宫格(String), 六宫格(String)
+2020-06-30 12:58:32.832 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:32.836 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:32.837 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 测试日志记录(String), 信息(String)
+2020-06-30 12:58:32.838 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:32.841 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:32.842 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 测试日志记录(String), 信息(String)
+2020-06-30 12:58:32.930 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:32.932 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:32.933 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新SKU(String), SKU(String)
+2020-06-30 12:58:32.934 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:32.936 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:32.937 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 更新SKU(String), SKU(String)
+2020-06-30 12:58:33.122 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:33.125 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:33.125 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除六宫格(String), 六宫格(String)
+2020-06-30 12:58:33.128 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:33.130 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:33.131 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新SPU(String), SPU(String)
+2020-06-30 12:58:33.132 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:33.135 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:33.136 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 更新SPU(String), SPU(String)
+2020-06-30 12:58:33.277 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:33.280 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:33.280 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询所有日志(String), 日志(String)
+2020-06-30 12:58:33.282 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:33.283 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:33.284 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除主题(String), 主题(String)
+2020-06-30 12:58:33.284 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:33.286 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:33.287 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 删除主题(String), 主题(String)
+2020-06-30 12:58:33.519 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:33.521 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:33.521 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除规格值(String), 规格值(String)
+2020-06-30 12:58:33.523 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:33.524 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:33.525 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 删除规格值(String), 规格值(String)
+2020-06-30 12:58:33.713 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:33.716 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:33.717 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新主题(String), 主题(String)
+2020-06-30 12:58:33.719 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:33.723 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:33.724 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 更新主题(String), 主题(String)
+2020-06-30 12:58:33.812 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:33.816 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:33.817 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新Banner item(String), Banner item(String)
+2020-06-30 12:58:33.820 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:33.823 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:33.824 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新Banner item(String), Banner item(String)
+2020-06-30 12:58:33.827 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:33.829 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:33.830 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除Banner item(String), Banner item(String)
+2020-06-30 12:58:33.831 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:33.833 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:33.834 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新分类(String), 分类(String)
+2020-06-30 12:58:33.835 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:33.837 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:33.837 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除分类(String), 分类(String)
+2020-06-30 12:58:33.839 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:33.840 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:33.841 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新Banner(String), Banner(String)
+2020-06-30 12:58:33.843 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:33.845 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:33.845 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询Banner(String), Banner(String)
+2020-06-30 12:58:33.846 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:33.848 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:33.849 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除SPU(String), SPU(String)
+2020-06-30 12:58:33.850 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:33.851 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:33.852 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 删除SPU(String), SPU(String)
+2020-06-30 12:58:33.919 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:33.922 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:33.922 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除Banner(String), Banner(String)
+2020-06-30 12:58:33.923 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:33.925 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:33.925 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新规格值(String), 规格值(String)
+2020-06-30 12:58:33.926 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:33.928 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:33.929 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 更新规格值(String), 规格值(String)
+2020-06-30 12:58:34.027 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:34.029 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:34.030 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除主题(String), 主题(String)
+2020-06-30 12:58:34.035 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:34.037 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:34.038 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查看lin的信息(String), 信息(String)
+2020-06-30 12:58:34.039 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:34.040 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:34.040 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 查看lin的信息(String), 信息(String)
+2020-06-30 12:58:34.134 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:34.136 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:34.137 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除图书(String), 图书(String)
+2020-06-30 12:58:34.138 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:34.140 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:34.140 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新规格值(String), 规格值(String)
+2020-06-30 12:58:34.142 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:34.145 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:34.146 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新SKU(String), SKU(String)
+2020-06-30 12:58:34.147 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:34.149 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:34.150 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建SPU(String), SPU(String)
+2020-06-30 12:58:34.151 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:34.152 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:34.152 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 创建SPU(String), SPU(String)
+2020-06-30 12:58:34.242 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:34.245 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:34.246 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新优惠券模板(String), 优惠券(String)
+2020-06-30 12:58:34.255 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:34.257 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:34.258 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 更新优惠券模板(String), 优惠券(String)
+2020-06-30 12:58:34.340 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:34.344 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:34.345 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建SKU(String), SKU(String)
+2020-06-30 12:58:34.346 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:34.348 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:34.349 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 创建SKU(String), SKU(String)
+2020-06-30 12:58:34.447 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:34.449 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:34.450 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除Banner(String), Banner(String)
+2020-06-30 12:58:34.452 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:34.453 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:34.454 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 修改订单状态(String), 订单(String)
+2020-06-30 12:58:34.454 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:34.456 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:34.456 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 修改订单状态(String), 订单(String)
+2020-06-30 12:58:34.546 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:34.549 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:34.549 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建主题(String), 主题(String)
+2020-06-30 12:58:34.551 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:34.555 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:34.557 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 创建主题(String), 主题(String)
+2020-06-30 12:58:34.645 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:34.647 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:34.648 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查看lin的信息(String), 信息(String)
+2020-06-30 12:58:34.649 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:34.651 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:34.651 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除图书(String), 图书(String)
+2020-06-30 12:58:34.652 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:34.654 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:34.654 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除专题下的spu(String), 主题(String)
+2020-06-30 12:58:34.655 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:34.656 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:34.656 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 删除专题下的spu(String), 主题(String)
+2020-06-30 12:58:34.744 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:34.746 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:34.747 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建规格值(String), 规格值(String)
+2020-06-30 12:58:34.749 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:34.750 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:34.751 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 创建规格值(String), 规格值(String)
+2020-06-30 12:58:34.851 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:34.853 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:34.853 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新优惠券模板(String), 优惠券(String)
+2020-06-30 12:58:34.854 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:34.856 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:34.857 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建优惠券(String), 优惠券(String)
+2020-06-30 12:58:34.858 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:34.860 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:34.861 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 创建优惠券(String), 优惠券(String)
+2020-06-30 12:58:34.950 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:34.952 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:34.952 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除优惠券(String), 优惠券(String)
+2020-06-30 12:58:34.953 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:34.954 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:34.955 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 删除优惠券(String), 优惠券(String)
+2020-06-30 12:58:35.049 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:35.051 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.051 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除分类(String), 分类(String)
+2020-06-30 12:58:35.052 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.054 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.055 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新活动(String), 活动(String)
+2020-06-30 12:58:35.056 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.058 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.060 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建六宫格(String), 六宫格(String)
+2020-06-30 12:58:35.061 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:35.062 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:35.063 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 创建六宫格(String), 六宫格(String)
+2020-06-30 12:58:35.148 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:35.150 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.151 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建Banner item(String), Banner item(String)
+2020-06-30 12:58:35.152 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:35.153 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:35.153 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 创建Banner item(String), Banner item(String)
+2020-06-30 12:58:35.247 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:35.249 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.249 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除SKU(String), SKU(String)
+2020-06-30 12:58:35.250 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:35.251 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:35.251 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 删除SKU(String), SKU(String)
+2020-06-30 12:58:35.362 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:35.365 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.366 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新六宫格(String), 六宫格(String)
+2020-06-30 12:58:35.367 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.368 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.368 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新SPU(String), SPU(String)
+2020-06-30 12:58:35.369 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.370 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.371 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建Banner item(String), Banner item(String)
+2020-06-30 12:58:35.372 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.373 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.374 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建规格值(String), 规格值(String)
+2020-06-30 12:58:35.375 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.378 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.378 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除规格名(String), 规格名(String)
+2020-06-30 12:58:35.379 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:35.381 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:35.381 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 删除规格名(String), 规格名(String)
+2020-06-30 12:58:35.462 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:35.464 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.464 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建分类(String), 分类(String)
+2020-06-30 12:58:35.465 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.466 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.467 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新规格名(String), 规格名(String)
+2020-06-30 12:58:35.468 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:35.469 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:35.470 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 更新规格名(String), 规格名(String)
+2020-06-30 12:58:35.560 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:35.562 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.563 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建专题下的spu(String), 主题(String)
+2020-06-30 12:58:35.564 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:35.567 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:35.568 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 创建专题下的spu(String), 主题(String)
+2020-06-30 12:58:35.693 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:35.694 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.695 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建优惠券(String), 优惠券(String)
+2020-06-30 12:58:35.695 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.697 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.697 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询日志记录的用户(String), 日志(String)
+2020-06-30 12:58:35.698 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.700 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.700 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建专题下的spu(String), 主题(String)
+2020-06-30 12:58:35.701 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.703 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.703 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除活动(String), 活动(String)
+2020-06-30 12:58:35.704 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.706 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.707 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询Banner item(String), Banner item(String)
+2020-06-30 12:58:35.708 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.709 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.710 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新规格名(String), 规格名(String)
+2020-06-30 12:58:35.710 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.712 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.712 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建优惠券模板(String), 优惠券(String)
+2020-06-30 12:58:35.713 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:35.714 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:35.715 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 创建优惠券模板(String), 优惠券(String)
+2020-06-30 12:58:35.808 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:35.810 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.810 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除规格名(String), 规格名(String)
+2020-06-30 12:58:35.811 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.813 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.813 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建六宫格(String), 六宫格(String)
+2020-06-30 12:58:35.814 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.816 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.816 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建活动(String), 活动(String)
+2020-06-30 12:58:35.817 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.818 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.818 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新活动(String), 活动(String)
+2020-06-30 12:58:35.819 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.821 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.821 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建SPU(String), SPU(String)
+2020-06-30 12:58:35.822 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.824 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.824 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除专题下的spu(String), 主题(String)
+2020-06-30 12:58:35.826 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.828 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.828 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 测试日志记录(String), 信息(String)
+2020-06-30 12:58:35.829 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.830 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.830 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建主题(String), 主题(String)
+2020-06-30 12:58:35.831 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.833 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.833 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新优惠券(String), 优惠券(String)
+2020-06-30 12:58:35.834 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:35.835 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:35.836 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 更新优惠券(String), 优惠券(String)
+2020-06-30 12:58:35.915 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:35.918 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.918 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 搜索日志(String), 日志(String)
+2020-06-30 12:58:35.919 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.921 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.921 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除优惠券(String), 优惠券(String)
+2020-06-30 12:58:35.922 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:35.924 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:35.924 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建规格名(String), 规格名(String)
+2020-06-30 12:58:35.925 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 0
+2020-06-30 12:58:35.926 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==>  Preparing: INSERT INTO lin_permission ( name, module ) VALUES ( ?, ? ) 
+2020-06-30 12:58:35.926 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - ==> Parameters: 创建规格名(String), 规格名(String)
+2020-06-30 12:58:36.022 [main] DEBUG i.g.talelin.latticy.mapper.PermissionMapper.insert - <==    Updates: 1
+2020-06-30 12:58:36.023 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:36.024 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建优惠券模板(String), 优惠券(String)
+2020-06-30 12:58:36.025 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:36.026 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:36.027 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建分类(String), 分类(String)
+2020-06-30 12:58:36.028 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:36.029 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:36.029 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建Banner(String), Banner(String)
+2020-06-30 12:58:36.030 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:36.032 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:36.032 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除规格值(String), 规格值(String)
+2020-06-30 12:58:36.033 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:36.035 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:36.035 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除Banner item(String), Banner item(String)
+2020-06-30 12:58:36.036 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:36.038 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:36.038 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询日志记录的用户(String), 日志(String)
+2020-06-30 12:58:36.039 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:36.040 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:36.041 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询Banner(String), Banner(String)
+2020-06-30 12:58:36.042 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:36.043 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:36.044 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建SKU(String), SKU(String)
+2020-06-30 12:58:36.045 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:36.046 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:36.046 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新优惠券(String), 优惠券(String)
+2020-06-30 12:58:36.047 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:36.049 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:36.049 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建规格名(String), 规格名(String)
+2020-06-30 12:58:36.050 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:36.051 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:36.052 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除SPU(String), SPU(String)
+2020-06-30 12:58:36.052 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:36.054 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:36.054 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新Banner(String), Banner(String)
+2020-06-30 12:58:36.055 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:36.056 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:36.057 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新分类(String), 分类(String)
+2020-06-30 12:58:36.057 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:36.059 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:36.060 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新主题(String), 主题(String)
+2020-06-30 12:58:36.061 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:36.063 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:36.063 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 修改订单状态(String), 订单(String)
+2020-06-30 12:58:36.064 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:36.065 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:36.065 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除SKU(String), SKU(String)
+2020-06-30 12:58:36.066 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:36.067 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 12:58:36.068 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建活动(String), 活动(String)
+2020-06-30 12:58:36.069 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 12:58:36.072 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectList - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL 
+2020-06-30 12:58:36.073 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectList - ==> Parameters: 
+2020-06-30 12:58:36.077 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectList - <==      Total: 49
+2020-06-30 12:58:36.083 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-06-30 12:58:36.085 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 创建活动(String), (String), false(Boolean), 2020-06-27 01:02:20.804(Timestamp), 2020-06-27 01:02:20.804(Timestamp), 5(Integer)
+2020-06-30 12:58:36.110 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-06-30 12:58:36.111 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-06-30 12:58:36.112 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 删除活动(String), (String), false(Boolean), 2020-06-27 01:02:21.23(Timestamp), 2020-06-27 01:02:21.23(Timestamp), 6(Integer)
+2020-06-30 12:58:36.113 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-06-30 12:58:36.114 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-06-30 12:58:36.114 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 更新活动(String), (String), false(Boolean), 2020-06-27 01:02:21.465(Timestamp), 2020-06-27 01:02:21.465(Timestamp), 7(Integer)
+2020-06-30 12:58:36.115 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-06-30 12:58:36.122 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2020-06-30 12:58:36.147 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2020-06-30 12:58:36.150 [main] INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 10.392 seconds (JVM running for 13.762)
+2020-06-30 12:59:17.048 [http-nio-5000-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-30 12:59:17.048 [http-nio-5000-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-06-30 12:59:17.048 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-06-30 12:59:17.063 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-06-30 12:59:17.064 [http-nio-5000-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2020-06-30 12:59:17.076 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v1/category/list", parameters={}
+2020-06-30 12:59:17.079 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.CategoryController#getList()
+2020-06-30 12:59:17.091 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler io.github.talelin.latticy.common.exception.RestExceptionHandler#processException(HttpException, HttpServletRequest, HttpServletResponse)
+2020-06-30 12:59:17.095 [http-nio-5000-exec-2] ERROR i.g.t.l.common.exception.RestExceptionHandler - 
+io.github.talelin.autoconfigure.exception.AuthorizationException: authorization field is required
+	at io.github.talelin.latticy.common.interceptor.AuthorizeVerifyResolverImpl.verifyHeader(AuthorizeVerifyResolverImpl.java:162)
+	at io.github.talelin.latticy.common.interceptor.AuthorizeVerifyResolverImpl.handleLogin(AuthorizeVerifyResolverImpl.java:61)
+	at io.github.talelin.autoconfigure.interceptor.AuthorizeInterceptor.handleNoMeta(AuthorizeInterceptor.java:101)
+	at io.github.talelin.autoconfigure.interceptor.AuthorizeInterceptor.preHandle(AuthorizeInterceptor.java:72)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:141)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-06-30 12:59:17.167 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-06-30 12:59:17.168 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [UnifyResponseVO(code=10012, message=请传入认证头字段, request=GET /v1/category/list)]
+2020-06-30 12:59:17.191 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [io.github.talelin.autoconfigure.exception.AuthorizationException: authorization field is required]
+2020-06-30 12:59:17.191 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 401 UNAUTHORIZED
+2020-06-30 12:59:46.240 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-30 12:59:46.241 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-06-30 12:59:46.247 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-06-30 13:00:08.598 [main] INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication on DESKTOP-CN6PMV5 with PID 37396 (E:\Mfans\CMS\deep-forest\target\classes started by mengyue in E:\Mfans\CMS\deep-forest)
+2020-06-30 13:00:08.604 [main] INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2020-06-30 13:00:10.885 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-30 13:00:11.562 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2020-06-30 13:00:11.575 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2020-06-30 13:00:11.576 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-30 13:00:11.577 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-06-30 13:00:11.739 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-06-30 13:00:11.740 [main] DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-06-30 13:00:11.740 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3039 ms
+2020-06-30 13:00:11.773 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2020-06-30 13:00:11.774 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2020-06-30 13:00:12.195 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-06-30 13:00:12.384 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-06-30 13:00:16.380 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-30 13:00:16.413 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-06-30 13:00:16.506 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 120 mappings in 'requestMappingHandlerMapping'
+2020-06-30 13:00:16.538 [main] DEBUG o.s.web.servlet.config.annotation.WebMvcConfigurer - Default resource handling disabled
+2020-06-30 13:00:16.554 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/assets/**] in 'resourceHandlerMapping'
+2020-06-30 13:00:16.569 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-06-30 13:00:16.906 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:16.936 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除六宫格(String), 六宫格(String)
+2020-06-30 13:00:16.997 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.001 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.001 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建主题(String), 主题(String)
+2020-06-30 13:00:17.003 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.005 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.005 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询所有日志(String), 日志(String)
+2020-06-30 13:00:17.007 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.009 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.010 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建Banner(String), Banner(String)
+2020-06-30 13:00:17.011 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.014 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.015 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询日志记录的用户(String), 日志(String)
+2020-06-30 13:00:17.016 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.019 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.020 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询所有日志(String), 日志(String)
+2020-06-30 13:00:17.022 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.024 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.025 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询Banner item(String), Banner item(String)
+2020-06-30 13:00:17.026 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.029 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.030 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 测试日志记录(String), 信息(String)
+2020-06-30 13:00:17.034 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.036 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.037 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新SKU(String), SKU(String)
+2020-06-30 13:00:17.039 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.041 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.042 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新SPU(String), SPU(String)
+2020-06-30 13:00:17.043 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.046 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.047 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新主题(String), 主题(String)
+2020-06-30 13:00:17.049 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.053 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.054 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新Banner item(String), Banner item(String)
+2020-06-30 13:00:17.058 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.062 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.063 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除Banner item(String), Banner item(String)
+2020-06-30 13:00:17.065 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.068 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.069 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新分类(String), 分类(String)
+2020-06-30 13:00:17.070 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.073 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.074 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除分类(String), 分类(String)
+2020-06-30 13:00:17.076 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.081 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.083 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询Banner(String), Banner(String)
+2020-06-30 13:00:17.086 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.090 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.091 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除SPU(String), SPU(String)
+2020-06-30 13:00:17.093 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.095 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.096 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除SPU(String), SPU(String)
+2020-06-30 13:00:17.098 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.100 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.101 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新优惠券模板(String), 优惠券(String)
+2020-06-30 13:00:17.103 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.105 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.106 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建规格名(String), 规格名(String)
+2020-06-30 13:00:17.108 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.111 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.112 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新SPU(String), SPU(String)
+2020-06-30 13:00:17.114 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.116 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.117 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除主题(String), 主题(String)
+2020-06-30 13:00:17.119 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.122 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.122 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查看lin的信息(String), 信息(String)
+2020-06-30 13:00:17.124 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.127 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.128 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新六宫格(String), 六宫格(String)
+2020-06-30 13:00:17.130 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.133 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.134 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新规格值(String), 规格值(String)
+2020-06-30 13:00:17.137 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.140 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.141 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除六宫格(String), 六宫格(String)
+2020-06-30 13:00:17.143 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.145 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.147 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新优惠券模板(String), 优惠券(String)
+2020-06-30 13:00:17.150 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.152 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.153 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除图书(String), 图书(String)
+2020-06-30 13:00:17.154 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.156 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.157 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建优惠券模板(String), 优惠券(String)
+2020-06-30 13:00:17.159 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.160 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.161 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除规格名(String), 规格名(String)
+2020-06-30 13:00:17.162 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.166 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.166 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除活动(String), 活动(String)
+2020-06-30 13:00:17.169 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.171 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.171 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除Banner(String), Banner(String)
+2020-06-30 13:00:17.173 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.175 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.175 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建主题(String), 主题(String)
+2020-06-30 13:00:17.176 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.178 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.179 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除图书(String), 图书(String)
+2020-06-30 13:00:17.182 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.185 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.186 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除Banner(String), Banner(String)
+2020-06-30 13:00:17.187 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.189 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.189 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除专题下的spu(String), 主题(String)
+2020-06-30 13:00:17.191 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.193 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.194 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建规格值(String), 规格值(String)
+2020-06-30 13:00:17.197 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.199 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.200 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建优惠券(String), 优惠券(String)
+2020-06-30 13:00:17.201 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.203 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.204 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除SKU(String), SKU(String)
+2020-06-30 13:00:17.206 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.208 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.208 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建Banner item(String), Banner item(String)
+2020-06-30 13:00:17.210 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.212 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.213 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 搜索日志(String), 日志(String)
+2020-06-30 13:00:17.215 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.218 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.218 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新优惠券(String), 优惠券(String)
+2020-06-30 13:00:17.219 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.222 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.223 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除SKU(String), SKU(String)
+2020-06-30 13:00:17.225 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.228 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.229 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新主题(String), 主题(String)
+2020-06-30 13:00:17.230 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.232 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.232 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新六宫格(String), 六宫格(String)
+2020-06-30 13:00:17.234 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.236 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.237 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建Banner item(String), Banner item(String)
+2020-06-30 13:00:17.239 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.240 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.241 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 测试日志记录(String), 信息(String)
+2020-06-30 13:00:17.242 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.244 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.244 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除规格名(String), 规格名(String)
+2020-06-30 13:00:17.245 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.247 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.248 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建分类(String), 分类(String)
+2020-06-30 13:00:17.249 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.251 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.251 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建优惠券(String), 优惠券(String)
+2020-06-30 13:00:17.252 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.254 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.254 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新规格名(String), 规格名(String)
+2020-06-30 13:00:17.255 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.257 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.257 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除Banner item(String), Banner item(String)
+2020-06-30 13:00:17.258 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.260 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.260 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建专题下的spu(String), 主题(String)
+2020-06-30 13:00:17.262 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.263 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.264 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除活动(String), 活动(String)
+2020-06-30 13:00:17.265 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.266 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.267 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询Banner item(String), Banner item(String)
+2020-06-30 13:00:17.276 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.278 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.278 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除分类(String), 分类(String)
+2020-06-30 13:00:17.279 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.281 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.281 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建优惠券模板(String), 优惠券(String)
+2020-06-30 13:00:17.282 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.284 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.284 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新Banner item(String), Banner item(String)
+2020-06-30 13:00:17.285 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.287 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.287 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建六宫格(String), 六宫格(String)
+2020-06-30 13:00:17.288 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.289 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.290 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除规格值(String), 规格值(String)
+2020-06-30 13:00:17.291 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.292 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.293 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建SKU(String), SKU(String)
+2020-06-30 13:00:17.294 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.295 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.296 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新活动(String), 活动(String)
+2020-06-30 13:00:17.297 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.298 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.299 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建SPU(String), SPU(String)
+2020-06-30 13:00:17.300 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.302 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.302 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建专题下的spu(String), 主题(String)
+2020-06-30 13:00:17.303 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.305 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.305 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建活动(String), 活动(String)
+2020-06-30 13:00:17.306 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.308 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.308 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新分类(String), 分类(String)
+2020-06-30 13:00:17.309 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.311 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.311 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新规格值(String), 规格值(String)
+2020-06-30 13:00:17.312 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.314 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.315 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新Banner(String), Banner(String)
+2020-06-30 13:00:17.316 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.317 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.318 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建SPU(String), SPU(String)
+2020-06-30 13:00:17.319 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.321 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.321 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新优惠券(String), 优惠券(String)
+2020-06-30 13:00:17.322 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.324 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.324 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新活动(String), 活动(String)
+2020-06-30 13:00:17.325 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.327 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.327 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查看lin的信息(String), 信息(String)
+2020-06-30 13:00:17.329 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.331 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.331 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 搜索日志(String), 日志(String)
+2020-06-30 13:00:17.333 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.335 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.336 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询Banner(String), Banner(String)
+2020-06-30 13:00:17.338 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.340 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.341 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建规格值(String), 规格值(String)
+2020-06-30 13:00:17.342 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.344 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.344 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除优惠券(String), 优惠券(String)
+2020-06-30 13:00:17.345 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.347 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.348 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除规格值(String), 规格值(String)
+2020-06-30 13:00:17.349 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.351 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.352 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 修改订单状态(String), 订单(String)
+2020-06-30 13:00:17.353 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.354 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.355 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询日志记录的用户(String), 日志(String)
+2020-06-30 13:00:17.356 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.357 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.358 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建SKU(String), SKU(String)
+2020-06-30 13:00:17.359 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.361 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.362 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建规格名(String), 规格名(String)
+2020-06-30 13:00:17.363 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.365 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.365 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除专题下的spu(String), 主题(String)
+2020-06-30 13:00:17.366 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.368 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.368 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除主题(String), 主题(String)
+2020-06-30 13:00:17.369 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.371 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.371 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新Banner(String), Banner(String)
+2020-06-30 13:00:17.372 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.374 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.375 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除优惠券(String), 优惠券(String)
+2020-06-30 13:00:17.376 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.377 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.378 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建六宫格(String), 六宫格(String)
+2020-06-30 13:00:17.379 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.381 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.381 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 修改订单状态(String), 订单(String)
+2020-06-30 13:00:17.383 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.384 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.385 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建活动(String), 活动(String)
+2020-06-30 13:00:17.386 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.387 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.388 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新规格名(String), 规格名(String)
+2020-06-30 13:00:17.389 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.390 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.391 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建分类(String), 分类(String)
+2020-06-30 13:00:17.392 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.393 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.394 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建Banner(String), Banner(String)
+2020-06-30 13:00:17.395 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.397 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-06-30 13:00:17.397 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新SKU(String), SKU(String)
+2020-06-30 13:00:17.399 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-06-30 13:00:17.403 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectList - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL 
+2020-06-30 13:00:17.404 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectList - ==> Parameters: 
+2020-06-30 13:00:17.408 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectList - <==      Total: 49
+2020-06-30 13:00:17.426 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-06-30 13:00:17.430 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 创建活动(String), (String), false(Boolean), 2020-06-27 01:02:20.804(Timestamp), 2020-06-27 01:02:20.804(Timestamp), 5(Integer)
+2020-06-30 13:00:17.431 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-06-30 13:00:17.433 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-06-30 13:00:17.434 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 删除活动(String), (String), false(Boolean), 2020-06-27 01:02:21.23(Timestamp), 2020-06-27 01:02:21.23(Timestamp), 6(Integer)
+2020-06-30 13:00:17.435 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-06-30 13:00:17.436 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-06-30 13:00:17.437 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 更新活动(String), (String), false(Boolean), 2020-06-27 01:02:21.465(Timestamp), 2020-06-27 01:02:21.465(Timestamp), 7(Integer)
+2020-06-30 13:00:17.438 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-06-30 13:00:17.443 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2020-06-30 13:00:17.496 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2020-06-30 13:00:17.501 [main] INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 9.939 seconds (JVM running for 22.36)
+2020-06-30 13:01:22.979 [http-nio-5000-exec-3] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-30 13:01:22.980 [http-nio-5000-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-06-30 13:01:22.980 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-06-30 13:01:23.069 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-06-30 13:01:23.069 [http-nio-5000-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 89 ms
+2020-06-30 13:01:23.089 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v1/category/list", parameters={}
+2020-06-30 13:01:23.148 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.CategoryController#getList()
+2020-06-30 13:01:24.416 [http-nio-5000-exec-3] DEBUG i.g.t.latticy.mapper.CategoryMapper.selectList - ==>  Preparing: SELECT id,name,description,is_root,parent_id,img,`index`,online,level,create_time,update_time,delete_time FROM category WHERE delete_time IS NULL AND (is_root = ?) 
+2020-06-30 13:01:24.418 [http-nio-5000-exec-3] DEBUG i.g.t.latticy.mapper.CategoryMapper.selectList - ==> Parameters: NOT_ROOT(String)
+2020-06-30 13:01:24.700 [http-nio-5000-exec-3] DEBUG i.g.t.latticy.mapper.CategoryMapper.selectList - <==      Total: 29
+2020-06-30 13:01:25.620 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-06-30 13:01:25.623 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[CategoryDO(id=8, name=平底鞋, description=null, isRoot=0, parentId=5, img=http://i2.sleeve.7yue.pro/u4 (truncated)...]
+2020-06-30 13:01:26.807 [http-nio-5000-exec-3] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/category/list] from: 0:0:0:0:0:0:0:1 costs: 3655ms
+2020-06-30 13:01:26.826 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-06-30 13:04:36.101 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-30 13:04:36.108 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-06-30 13:04:36.124 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

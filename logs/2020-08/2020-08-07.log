@@ -1,0 +1,930 @@
+2020-08-07 07:54:44.587 [main] INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication on DESKTOP-CN6PMV5 with PID 19440 (E:\Mfans\CMS\deep-forest\target\classes started by mengyue in E:\Mfans\CMS\deep-forest)
+2020-08-07 07:54:44.587 [main] INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2020-08-07 07:54:51.478 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-07 07:54:52.119 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2020-08-07 07:54:52.134 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2020-08-07 07:54:52.134 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-07 07:54:52.134 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-08-07 07:54:52.306 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-08-07 07:54:52.306 [main] DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-08-07 07:54:52.306 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7626 ms
+2020-08-07 07:54:52.337 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2020-08-07 07:54:52.337 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2020-08-07 07:54:52.697 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-08-07 07:54:53.072 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-08-07 07:54:57.728 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 07:54:57.744 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-08-07 07:54:57.838 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 121 mappings in 'requestMappingHandlerMapping'
+2020-08-07 07:54:57.885 [main] DEBUG o.s.web.servlet.config.annotation.WebMvcConfigurer - Default resource handling disabled
+2020-08-07 07:54:57.900 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/assets/**] in 'resourceHandlerMapping'
+2020-08-07 07:54:57.916 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-08-07 07:54:58.275 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.306 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除六宫格(String), 六宫格(String)
+2020-08-07 07:54:58.385 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.400 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.400 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询日志记录的用户(String), 日志(String)
+2020-08-07 07:54:58.400 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.400 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.400 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询所有日志(String), 日志(String)
+2020-08-07 07:54:58.400 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.400 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.400 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新SKU(String), SKU(String)
+2020-08-07 07:54:58.400 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.416 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.416 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 测试日志记录(String), 信息(String)
+2020-08-07 07:54:58.416 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.416 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.416 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新SKU(String), SKU(String)
+2020-08-07 07:54:58.416 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.416 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.416 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新SPU(String), SPU(String)
+2020-08-07 07:54:58.416 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.416 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.416 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除SKU(String), SKU(String)
+2020-08-07 07:54:58.416 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.431 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.431 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建Banner item(String), Banner item(String)
+2020-08-07 07:54:58.431 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.431 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.431 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新主题(String), 主题(String)
+2020-08-07 07:54:58.431 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.431 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.431 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新分类(String), 分类(String)
+2020-08-07 07:54:58.431 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.431 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.431 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除分类(String), 分类(String)
+2020-08-07 07:54:58.447 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.447 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.447 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新优惠券(String), 优惠券(String)
+2020-08-07 07:54:58.447 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.447 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.447 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除优惠券(String), 优惠券(String)
+2020-08-07 07:54:58.447 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.447 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.447 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除SPU(String), SPU(String)
+2020-08-07 07:54:58.447 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.463 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.463 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除主题(String), 主题(String)
+2020-08-07 07:54:58.463 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.463 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.463 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查看lin的信息(String), 信息(String)
+2020-08-07 07:54:58.463 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.463 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.463 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除SPU(String), SPU(String)
+2020-08-07 07:54:58.478 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.478 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.478 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新优惠券模板(String), 优惠券(String)
+2020-08-07 07:54:58.478 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.478 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.478 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建优惠券(String), 优惠券(String)
+2020-08-07 07:54:58.478 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.478 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.478 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新规格值(String), 规格值(String)
+2020-08-07 07:54:58.478 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.478 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.478 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除活动(String), 活动(String)
+2020-08-07 07:54:58.478 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.494 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.494 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建规格名(String), 规格名(String)
+2020-08-07 07:54:58.494 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.494 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.494 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新优惠券模板(String), 优惠券(String)
+2020-08-07 07:54:58.494 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.494 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.494 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建分类(String), 分类(String)
+2020-08-07 07:54:58.494 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.494 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.494 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 修改订单状态(String), 订单(String)
+2020-08-07 07:54:58.510 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.510 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.510 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除规格值(String), 规格值(String)
+2020-08-07 07:54:58.510 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.510 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.510 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建主题(String), 主题(String)
+2020-08-07 07:54:58.510 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.510 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.510 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除图书(String), 图书(String)
+2020-08-07 07:54:58.526 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.526 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.526 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除图书(String), 图书(String)
+2020-08-07 07:54:58.526 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.526 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.526 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除专题下的spu(String), 主题(String)
+2020-08-07 07:54:58.526 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.526 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.526 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建规格值(String), 规格值(String)
+2020-08-07 07:54:58.526 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.526 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.541 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建优惠券(String), 优惠券(String)
+2020-08-07 07:54:58.541 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.541 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.541 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新主题(String), 主题(String)
+2020-08-07 07:54:58.541 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.541 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.541 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新规格名(String), 规格名(String)
+2020-08-07 07:54:58.541 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.541 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.541 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新六宫格(String), 六宫格(String)
+2020-08-07 07:54:58.541 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.541 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.541 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除SKU(String), SKU(String)
+2020-08-07 07:54:58.557 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.557 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.557 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新六宫格(String), 六宫格(String)
+2020-08-07 07:54:58.557 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.557 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.557 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建Banner item(String), Banner item(String)
+2020-08-07 07:54:58.557 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.557 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.557 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除规格名(String), 规格名(String)
+2020-08-07 07:54:58.557 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.557 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.557 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建分类(String), 分类(String)
+2020-08-07 07:54:58.572 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.572 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.572 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新规格名(String), 规格名(String)
+2020-08-07 07:54:58.572 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.572 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.572 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建专题下的spu(String), 主题(String)
+2020-08-07 07:54:58.572 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.572 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.572 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除活动(String), 活动(String)
+2020-08-07 07:54:58.572 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.588 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.588 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建优惠券模板(String), 优惠券(String)
+2020-08-07 07:54:58.588 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.588 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.588 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建SPU(String), SPU(String)
+2020-08-07 07:54:58.588 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.588 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.588 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建优惠券模板(String), 优惠券(String)
+2020-08-07 07:54:58.588 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.588 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.588 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询所有日志(String), 日志(String)
+2020-08-07 07:54:58.604 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.604 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.604 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建六宫格(String), 六宫格(String)
+2020-08-07 07:54:58.604 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.604 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.604 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新活动(String), 活动(String)
+2020-08-07 07:54:58.604 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.604 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.604 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建SPU(String), SPU(String)
+2020-08-07 07:54:58.604 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.619 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.619 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建活动(String), 活动(String)
+2020-08-07 07:54:58.619 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.619 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.619 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新分类(String), 分类(String)
+2020-08-07 07:54:58.619 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.619 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.619 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除分类(String), 分类(String)
+2020-08-07 07:54:58.619 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.635 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.635 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建规格值(String), 规格值(String)
+2020-08-07 07:54:58.635 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.635 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.635 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建六宫格(String), 六宫格(String)
+2020-08-07 07:54:58.650 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.650 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.650 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建主题(String), 主题(String)
+2020-08-07 07:54:58.650 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.650 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.650 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新优惠券(String), 优惠券(String)
+2020-08-07 07:54:58.650 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.650 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.650 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 搜索日志(String), 日志(String)
+2020-08-07 07:54:58.650 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.650 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.650 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除优惠券(String), 优惠券(String)
+2020-08-07 07:54:58.650 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.666 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.666 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新SPU(String), SPU(String)
+2020-08-07 07:54:58.666 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.666 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.666 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建专题下的spu(String), 主题(String)
+2020-08-07 07:54:58.666 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.666 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.666 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除规格值(String), 规格值(String)
+2020-08-07 07:54:58.666 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.666 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.666 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询日志记录的用户(String), 日志(String)
+2020-08-07 07:54:58.682 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.682 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.682 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建SKU(String), SKU(String)
+2020-08-07 07:54:58.682 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.682 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.682 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除主题(String), 主题(String)
+2020-08-07 07:54:58.682 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.682 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.682 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除专题下的spu(String), 主题(String)
+2020-08-07 07:54:58.682 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.682 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.682 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建规格名(String), 规格名(String)
+2020-08-07 07:54:58.682 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.697 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.697 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除六宫格(String), 六宫格(String)
+2020-08-07 07:54:58.697 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.697 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.697 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查看lin的信息(String), 信息(String)
+2020-08-07 07:54:58.697 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.697 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.697 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除规格名(String), 规格名(String)
+2020-08-07 07:54:58.697 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.697 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.697 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 测试日志记录(String), 信息(String)
+2020-08-07 07:54:58.697 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.713 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.713 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新活动(String), 活动(String)
+2020-08-07 07:54:58.713 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.713 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.713 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 修改订单状态(String), 订单(String)
+2020-08-07 07:54:58.713 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.713 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.713 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建活动(String), 活动(String)
+2020-08-07 07:54:58.713 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.713 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.713 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 搜索日志(String), 日志(String)
+2020-08-07 07:54:58.713 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.729 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.729 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新规格值(String), 规格值(String)
+2020-08-07 07:54:58.729 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.729 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-07 07:54:58.729 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建SKU(String), SKU(String)
+2020-08-07 07:54:58.729 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-07 07:54:58.744 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectList - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL 
+2020-08-07 07:54:58.744 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectList - ==> Parameters: 
+2020-08-07 07:54:58.744 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectList - <==      Total: 52
+2020-08-07 07:54:58.760 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-07 07:54:58.775 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 创建活动(String), (String), false(Boolean), 2020-06-27 01:02:20.804(Timestamp), 2020-06-27 01:02:20.804(Timestamp), 5(Integer)
+2020-08-07 07:54:58.775 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-07 07:54:58.775 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-07 07:54:58.775 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 删除活动(String), (String), false(Boolean), 2020-06-27 01:02:21.23(Timestamp), 2020-06-27 01:02:21.23(Timestamp), 6(Integer)
+2020-08-07 07:54:58.775 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-07 07:54:58.775 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-07 07:54:58.775 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 更新活动(String), (String), false(Boolean), 2020-06-27 01:02:21.465(Timestamp), 2020-06-27 01:02:21.465(Timestamp), 7(Integer)
+2020-08-07 07:54:58.791 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-07 07:54:58.791 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-07 07:54:58.791 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 更新Banner(String), Banner(String), false(Boolean), 2020-06-28 01:39:10.304(Timestamp), 2020-06-28 01:39:10.304(Timestamp), 8(Integer)
+2020-08-07 07:54:58.791 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-07 07:54:58.791 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-07 07:54:58.791 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 更新Banner item(String), Banner item(String), false(Boolean), 2020-06-28 01:39:11.27(Timestamp), 2020-06-28 01:39:11.27(Timestamp), 10(Integer)
+2020-08-07 07:54:58.791 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-07 07:54:58.791 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-07 07:54:58.791 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 删除Banner(String), Banner(String), false(Boolean), 2020-06-28 01:39:11.516(Timestamp), 2020-06-28 01:39:11.516(Timestamp), 12(Integer)
+2020-08-07 07:54:58.807 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-07 07:54:58.807 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-07 07:54:58.807 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 查询Banner item(String), Banner item(String), false(Boolean), 2020-06-28 01:39:11.619(Timestamp), 2020-06-28 01:39:11.619(Timestamp), 13(Integer)
+2020-08-07 07:54:58.807 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-07 07:54:58.807 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-07 07:54:58.807 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 创建Banner(String), Banner(String), false(Boolean), 2020-06-28 01:39:11.954(Timestamp), 2020-06-28 01:39:11.954(Timestamp), 14(Integer)
+2020-08-07 07:54:58.807 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-07 07:54:58.807 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-07 07:54:58.807 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 删除Banner item(String), Banner item(String), false(Boolean), 2020-06-28 01:39:12.149(Timestamp), 2020-06-28 01:39:12.149(Timestamp), 15(Integer)
+2020-08-07 07:54:58.807 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-07 07:54:58.822 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-07 07:54:58.822 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 查询Banner(String), Banner(String), false(Boolean), 2020-06-28 01:39:12.732(Timestamp), 2020-06-28 01:39:12.732(Timestamp), 20(Integer)
+2020-08-07 07:54:58.822 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-07 07:54:58.822 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-07 07:54:58.822 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 创建Banner(String), (String), false(Boolean), 2020-08-03 22:32:22.859(Timestamp), 2020-08-03 22:32:22.859(Timestamp), 50(Integer)
+2020-08-07 07:54:58.822 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-07 07:54:58.822 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-07 07:54:58.822 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 删除Banner(String), (String), false(Boolean), 2020-08-03 22:32:23.161(Timestamp), 2020-08-03 22:32:23.161(Timestamp), 51(Integer)
+2020-08-07 07:54:58.822 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-07 07:54:58.838 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-07 07:54:58.838 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 更新Banner(String), (String), false(Boolean), 2020-08-03 22:32:23.336(Timestamp), 2020-08-03 22:32:23.336(Timestamp), 52(Integer)
+2020-08-07 07:54:58.838 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-07 07:54:58.838 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2020-08-07 07:54:58.885 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2020-08-07 07:54:58.900 [main] INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 15.368 seconds (JVM running for 27.767)
+2020-08-07 07:59:20.786 [http-nio-5000-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-07 07:59:20.786 [http-nio-5000-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-07 07:59:20.786 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-08-07 07:59:20.802 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-08-07 07:59:20.802 [http-nio-5000-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2020-08-07 07:59:20.833 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v1/banner/page?page=1&count=10", parameters={masked}
+2020-08-07 07:59:20.833 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#getBanners(Integer, Integer)
+2020-08-07 07:59:21.281 [http-nio-5000-exec-2] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM banner WHERE delete_time IS NULL 
+2020-08-07 07:59:21.281 [http-nio-5000-exec-2] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==> Parameters: 
+2020-08-07 07:59:21.288 [http-nio-5000-exec-2] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==>  Preparing: SELECT id,name,title,description,img,create_time,update_time,delete_time FROM banner WHERE delete_time IS NULL LIMIT ?,? 
+2020-08-07 07:59:21.288 [http-nio-5000-exec-2] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2020-08-07 07:59:21.303 [http-nio-5000-exec-2] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - <==      Total: 2
+2020-08-07 07:59:21.404 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 07:59:21.404 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [PageResponseVO(total=2, items=[io.github.talelin.latticy.model.BannerDO@669b43ad, io.github.talelin. (truncated)...]
+2020-08-07 07:59:21.450 [http-nio-5000-exec-2] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/banner/page] from: 127.0.0.1 costs: 570ms
+2020-08-07 07:59:21.450 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 07:59:23.371 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v1/banner/1", parameters={}
+2020-08-07 07:59:23.371 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#getWithItems(Integer)
+2020-08-07 07:59:23.393 [http-nio-5000-exec-3] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - ==>  Preparing: SELECT id,name,title,description,img,create_time,update_time,delete_time FROM banner WHERE id=? AND delete_time IS NULL 
+2020-08-07 07:59:23.393 [http-nio-5000-exec-3] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - ==> Parameters: 1(Integer)
+2020-08-07 07:59:23.393 [http-nio-5000-exec-3] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - <==      Total: 1
+2020-08-07 07:59:23.409 [http-nio-5000-exec-3] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - ==>  Preparing: SELECT id,name,img,keyword,type,banner_id,create_time,update_time,delete_time FROM banner_item WHERE delete_time IS NULL AND (banner_id = ?) 
+2020-08-07 07:59:23.409 [http-nio-5000-exec-3] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - ==> Parameters: 1(Integer)
+2020-08-07 07:59:23.409 [http-nio-5000-exec-3] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - <==      Total: 3
+2020-08-07 07:59:23.440 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 07:59:23.440 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [BannerWithItemsBO(id=1, name=b-1, title=2222, img=http://i1.sleeve.7yue.pro/d87e180f-0f8a-480c-966a- (truncated)...]
+2020-08-07 07:59:23.456 [http-nio-5000-exec-3] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/banner/1] from: 127.0.0.1 costs: 85ms
+2020-08-07 07:59:23.456 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 07:59:29.155 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v1/banner-item/1", parameters={}
+2020-08-07 07:59:29.155 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerItemController#get(Integer)
+2020-08-07 07:59:29.186 [http-nio-5000-exec-1] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectById - ==>  Preparing: SELECT id,name,img,keyword,type,banner_id,create_time,update_time,delete_time FROM banner_item WHERE id=? AND delete_time IS NULL 
+2020-08-07 07:59:29.186 [http-nio-5000-exec-1] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectById - ==> Parameters: 1(Integer)
+2020-08-07 07:59:29.186 [http-nio-5000-exec-1] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectById - <==      Total: 1
+2020-08-07 07:59:29.186 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 07:59:29.186 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [BaseModel(id=1, createTime=Thu Feb 20 18:25:19 CST 2020, updateTime=Thu Feb 20 18:29:31 CST 2020, de (truncated)...]
+2020-08-07 07:59:29.186 [http-nio-5000-exec-1] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/banner-item/1] from: 127.0.0.1 costs: 31ms
+2020-08-07 07:59:29.186 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 07:59:35.518 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v1/banner/1", parameters={}
+2020-08-07 07:59:35.518 [http-nio-5000-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#getWithItems(Integer)
+2020-08-07 07:59:35.523 [http-nio-5000-exec-5] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - ==>  Preparing: SELECT id,name,title,description,img,create_time,update_time,delete_time FROM banner WHERE id=? AND delete_time IS NULL 
+2020-08-07 07:59:35.523 [http-nio-5000-exec-5] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - ==> Parameters: 1(Integer)
+2020-08-07 07:59:35.523 [http-nio-5000-exec-5] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - <==      Total: 1
+2020-08-07 07:59:35.523 [http-nio-5000-exec-5] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - ==>  Preparing: SELECT id,name,img,keyword,type,banner_id,create_time,update_time,delete_time FROM banner_item WHERE delete_time IS NULL AND (banner_id = ?) 
+2020-08-07 07:59:35.523 [http-nio-5000-exec-5] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - ==> Parameters: 1(Integer)
+2020-08-07 07:59:35.523 [http-nio-5000-exec-5] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - <==      Total: 3
+2020-08-07 07:59:35.523 [http-nio-5000-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 07:59:35.523 [http-nio-5000-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [BannerWithItemsBO(id=1, name=b-1, title=2222, img=http://i1.sleeve.7yue.pro/d87e180f-0f8a-480c-966a- (truncated)...]
+2020-08-07 07:59:35.523 [http-nio-5000-exec-5] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/banner/1] from: 127.0.0.1 costs: 5ms
+2020-08-07 07:59:35.523 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 07:59:36.541 [http-nio-5000-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v1/banner/page?page=1&count=10", parameters={masked}
+2020-08-07 07:59:36.541 [http-nio-5000-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#getBanners(Integer, Integer)
+2020-08-07 07:59:36.541 [http-nio-5000-exec-4] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM banner WHERE delete_time IS NULL 
+2020-08-07 07:59:36.541 [http-nio-5000-exec-4] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==> Parameters: 
+2020-08-07 07:59:36.541 [http-nio-5000-exec-4] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==>  Preparing: SELECT id,name,title,description,img,create_time,update_time,delete_time FROM banner WHERE delete_time IS NULL LIMIT ?,? 
+2020-08-07 07:59:36.541 [http-nio-5000-exec-4] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2020-08-07 07:59:36.541 [http-nio-5000-exec-4] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - <==      Total: 2
+2020-08-07 07:59:36.541 [http-nio-5000-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 07:59:36.541 [http-nio-5000-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [PageResponseVO(total=2, items=[io.github.talelin.latticy.model.BannerDO@4bb5c230, io.github.talelin. (truncated)...]
+2020-08-07 07:59:36.541 [http-nio-5000-exec-4] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/banner/page] from: 127.0.0.1 costs: 0ms
+2020-08-07 07:59:36.541 [http-nio-5000-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 08:16:21.962 [http-nio-5000-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/v1/banner", parameters={}
+2020-08-07 08:16:21.962 [http-nio-5000-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#create(BannerDTO)
+2020-08-07 08:16:21.978 [http-nio-5000-exec-9] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/banner] from: 127.0.0.1 costs: 0ms
+2020-08-07 08:16:21.978 [http-nio-5000-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 08:16:21.993 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/v1/banner", parameters={}
+2020-08-07 08:16:21.993 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#create(BannerDTO)
+2020-08-07 08:16:22.078 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=utf-8" to [io.github.talelin.latticy.dto.BannerDTO@3141639]
+2020-08-07 08:16:22.617 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler io.github.talelin.latticy.common.exception.RestExceptionHandler#processException(MethodArgumentNotValidException, HttpServletRequest, HttpServletResponse)
+2020-08-07 08:16:22.680 [http-nio-5000-exec-8] ERROR i.g.t.l.common.exception.RestExceptionHandler - 
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public io.github.talelin.latticy.vo.CreatedVO io.github.talelin.latticy.controller.v1.BannerController.create(io.github.talelin.latticy.dto.BannerDTO) with 3 errors: [Field error in object 'bannerDTO' on field 'name': rejected value [1]; codes [Length.bannerDTO.name,Length.name,Length.java.lang.String,Length]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bannerDTO.name,name]; arguments []; default message [name],20,2]; default message [长度需要在2和20之间]] [Field error in object 'bannerDTO' on field 'title': rejected value [1]; codes [Length.bannerDTO.title,Length.title,Length.java.lang.String,Length]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bannerDTO.title,title]; arguments []; default message [title],30,2]; default message [长度需要在2和30之间]] [Field error in object 'bannerDTO' on field 'description': rejected value [1]; codes [Length.bannerDTO.description,Length.description,Length.java.lang.String,Length]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bannerDTO.description,description]; arguments []; default message [description],256,2]; default message [长度需要在2和256之间]] 
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-07 08:16:22.702 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 08:16:22.702 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [UnifyResponseVO(code=10030, message={name=长度需要在2和20之间, description=长度需要在2和256之间, title=长度需要在2和30之间}, (truncated)...]
+2020-08-07 08:16:22.780 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public io.github.talelin.latticy.vo.CreatedVO io.github.talelin.latticy.controller.v1.BannerController.create(io.github.talelin.latticy.dto.BannerDTO) with 3 errors: [Field error in object 'bannerDTO' on field 'name': rejected value [1]; codes [Length.bannerDTO.name,Length.name,Length.java.lang.String,Length]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bannerDTO.name,name]; arguments []; default message [name],20,2]; default message [长度需要在2和20之间]] [Field error in object 'bannerDTO' on field 'title': rejected value [1]; codes [Length.bannerDTO.title,Length.title,Length.java.lang.String,Length]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bannerDTO.title,title]; arguments []; default message [title],30,2]; default message [长度需要在2和30之间]] [Field error in object 'bannerDTO' on field 'description': rejected value [1]; codes [Length.bannerDTO.description,Length.description,Length.java.lang.String,Length]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bannerDTO.description,description]; arguments []; default message [description],256,2]; default message [长度需要在2和256之间]] ]
+2020-08-07 08:16:22.780 [http-nio-5000-exec-8] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/v1/banner] from: 127.0.0.1 costs: 787ms
+2020-08-07 08:16:22.780 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2020-08-07 08:17:06.248 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/v1/banner", parameters={}
+2020-08-07 08:17:06.248 [http-nio-5000-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#create(BannerDTO)
+2020-08-07 08:17:06.248 [http-nio-5000-exec-6] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/banner] from: 127.0.0.1 costs: 0ms
+2020-08-07 08:17:06.248 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 08:17:06.263 [http-nio-5000-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/v1/banner", parameters={}
+2020-08-07 08:17:06.263 [http-nio-5000-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#create(BannerDTO)
+2020-08-07 08:17:06.263 [http-nio-5000-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=utf-8" to [io.github.talelin.latticy.dto.BannerDTO@478419c7]
+2020-08-07 08:17:06.302 [http-nio-5000-exec-10] DEBUG i.g.talelin.latticy.mapper.BannerMapper.insert - ==>  Preparing: INSERT INTO banner ( name, title, description ) VALUES ( ?, ?, ? ) 
+2020-08-07 08:17:06.302 [http-nio-5000-exec-10] DEBUG i.g.talelin.latticy.mapper.BannerMapper.insert - ==> Parameters: 222222(String), 333333(String), 4444(String)
+2020-08-07 08:17:06.534 [http-nio-5000-exec-10] DEBUG i.g.talelin.latticy.mapper.BannerMapper.insert - <==    Updates: 1
+2020-08-07 08:17:06.565 [http-nio-5000-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 08:17:06.565 [http-nio-5000-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [UnifyResponseVO(code=1, message=创建成功, request=POST /v1/banner)]
+2020-08-07 08:17:06.565 [http-nio-5000-exec-10] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/v1/banner] from: 127.0.0.1 costs: 302ms
+2020-08-07 08:17:06.565 [http-nio-5000-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 201 CREATED
+2020-08-07 11:01:14.485 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49m20s630ms419µs).
+2020-08-07 11:25:21.625 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 11:25:21.717 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 11:25:21.747 [http-nio-5000-exec-3] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 7ms
+2020-08-07 11:25:21.748 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 11:25:22.145 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 11:25:22.180 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 11:25:22.238 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler io.github.talelin.latticy.common.exception.RestExceptionHandler#processException(HttpException, HttpServletRequest, HttpServletResponse)
+2020-08-07 11:25:22.250 [http-nio-5000-exec-1] ERROR i.g.t.l.common.exception.RestExceptionHandler - 
+io.github.talelin.autoconfigure.exception.AuthorizationException: authorization field is required
+	at io.github.talelin.latticy.common.interceptor.AuthorizeVerifyResolverImpl.verifyHeader(AuthorizeVerifyResolverImpl.java:162)
+	at io.github.talelin.latticy.common.interceptor.AuthorizeVerifyResolverImpl.handleLogin(AuthorizeVerifyResolverImpl.java:61)
+	at io.github.talelin.autoconfigure.interceptor.AuthorizeInterceptor.handleNoMeta(AuthorizeInterceptor.java:101)
+	at io.github.talelin.autoconfigure.interceptor.AuthorizeInterceptor.preHandle(AuthorizeInterceptor.java:72)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:141)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-08-07 11:25:22.266 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 11:25:22.267 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [UnifyResponseVO(code=10012, message=请传入认证头字段, request=POST /cms/file)]
+2020-08-07 11:25:22.281 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [io.github.talelin.autoconfigure.exception.AuthorizationException: authorization field is required]
+2020-08-07 11:25:22.282 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 401 UNAUTHORIZED
+2020-08-07 11:26:14.069 [http-nio-5000-exec-5] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[io.github.talelin.latticy.mapper]' package. Please check your configuration.
+2020-08-07 11:26:16.222 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-08-07 11:26:16.231 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 11:26:16.232 [http-nio-5000-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 11:26:16.234 [http-nio-5000-exec-5] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 1ms
+2020-08-07 11:26:16.234 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 11:26:16.334 [http-nio-5000-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 11:26:16.335 [http-nio-5000-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 11:26:16.682 [http-nio-5000-exec-4] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 11:26:16.683 [http-nio-5000-exec-4] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 11:26:16.833 [http-nio-5000-exec-4] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 0
+2020-08-07 11:26:16.949 [http-nio-5000-exec-4] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - ==>  Preparing: INSERT INTO lin_file ( path, type, name, extension, size, md5 ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2020-08-07 11:26:16.950 [http-nio-5000-exec-4] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - ==> Parameters: 2020\08\07\209a42923d8a4cfbb840d61cbc864622.jpg(String), LOCAL(String), 209a42923d8a4cfbb840d61cbc864622.jpg(String), .jpg(String), 423312(Integer), 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 11:26:17.267 [http-nio-5000-exec-4] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - <==    Updates: 1
+2020-08-07 11:26:17.398 [http-nio-5000-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 11:26:17.400 [http-nio-5000-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=3, key=file, path=2020\08\07\209a42923d8a4cfbb840d61cbc864622.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 11:26:17.424 [http-nio-5000-exec-4] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 1089ms
+2020-08-07 11:26:17.425 [http-nio-5000-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 11:29:53.049 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 11:29:53.049 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 11:29:53.050 [http-nio-5000-exec-8] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 0ms
+2020-08-07 11:29:53.051 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 11:29:53.072 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 11:29:53.074 [http-nio-5000-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 11:29:53.094 [http-nio-5000-exec-6] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 11:29:53.095 [http-nio-5000-exec-6] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 11:29:53.097 [http-nio-5000-exec-6] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 0
+2020-08-07 11:29:53.104 [http-nio-5000-exec-6] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - ==>  Preparing: INSERT INTO lin_file ( path, type, name, extension, size, md5 ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2020-08-07 11:29:53.107 [http-nio-5000-exec-6] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - ==> Parameters: 2020\08\07\257ba3aecc174b1a8f73749e01c2a5e4.jpg(String), LOCAL(String), 257ba3aecc174b1a8f73749e01c2a5e4.jpg(String), .jpg(String), 423312(Integer), 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 11:29:53.224 [http-nio-5000-exec-6] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - <==    Updates: 1
+2020-08-07 11:29:53.267 [http-nio-5000-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 11:29:53.268 [http-nio-5000-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=4, key=file, path=2020\08\07\257ba3aecc174b1a8f73749e01c2a5e4.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 11:29:53.272 [http-nio-5000-exec-6] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 197ms
+2020-08-07 11:29:53.275 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 11:32:00.272 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 11:32:00.275 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 11:32:00.277 [http-nio-5000-exec-3] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 1ms
+2020-08-07 11:32:00.278 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 11:32:00.312 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 11:32:00.314 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 11:32:00.330 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 11:32:00.330 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 11:32:00.347 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 1
+2020-08-07 11:32:00.349 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 11:32:00.349 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=4, key=file, path=2020\08\07\257ba3aecc174b1a8f73749e01c2a5e4.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 11:32:00.352 [http-nio-5000-exec-1] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 37ms
+2020-08-07 11:32:00.355 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 14:39:15.894 [http-nio-5000-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 14:39:15.978 [http-nio-5000-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 14:39:15.996 [http-nio-5000-exec-7] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 17ms
+2020-08-07 14:39:16.021 [http-nio-5000-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 14:39:16.120 [http-nio-5000-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 14:39:16.122 [http-nio-5000-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 14:39:16.259 [http-nio-5000-exec-9] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 14:39:16.268 [http-nio-5000-exec-9] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 14:39:16.293 [http-nio-5000-exec-9] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 0
+2020-08-07 14:39:16.306 [http-nio-5000-exec-9] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - ==>  Preparing: INSERT INTO lin_file ( path, type, name, extension, size, md5 ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2020-08-07 14:39:16.317 [http-nio-5000-exec-9] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - ==> Parameters: 2020\08\07\ccf75002c17f4a8f84a7171851175663.jpg(String), LOCAL(String), ccf75002c17f4a8f84a7171851175663.jpg(String), .jpg(String), 423312(Integer), 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 14:39:16.442 [http-nio-5000-exec-9] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - <==    Updates: 1
+2020-08-07 14:39:16.558 [http-nio-5000-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 14:39:16.559 [http-nio-5000-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=5, key=file, path=2020\08\07\ccf75002c17f4a8f84a7171851175663.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 14:39:16.648 [http-nio-5000-exec-9] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 470ms
+2020-08-07 14:39:16.650 [http-nio-5000-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 14:41:01.650 [http-nio-5000-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 14:41:01.650 [http-nio-5000-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 14:41:01.651 [http-nio-5000-exec-10] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 1ms
+2020-08-07 14:41:01.651 [http-nio-5000-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 14:41:01.689 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 14:41:01.690 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 14:41:01.705 [http-nio-5000-exec-2] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 14:41:01.706 [http-nio-5000-exec-2] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: f5ed0d607a55c067c0d5599cfc42d5d0(String)
+2020-08-07 14:41:01.709 [http-nio-5000-exec-2] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 0
+2020-08-07 14:41:01.714 [http-nio-5000-exec-2] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - ==>  Preparing: INSERT INTO lin_file ( path, type, name, extension, size, md5 ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2020-08-07 14:41:01.715 [http-nio-5000-exec-2] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - ==> Parameters: 2020\08\07\4438f0d61b3a4dcf83baac69cc8ec01d.jpg(String), LOCAL(String), 4438f0d61b3a4dcf83baac69cc8ec01d.jpg(String), .jpg(String), 525636(Integer), f5ed0d607a55c067c0d5599cfc42d5d0(String)
+2020-08-07 14:41:01.900 [http-nio-5000-exec-2] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - <==    Updates: 1
+2020-08-07 14:41:02.056 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 14:41:02.056 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=6, key=file, path=2020\08\07\4438f0d61b3a4dcf83baac69cc8ec01d.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 14:41:02.058 [http-nio-5000-exec-2] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 367ms
+2020-08-07 14:41:02.060 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 14:42:20.887 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/assets/2020/08/07/4438f0d61b3a4dcf83baac69cc8ec01d.jpg", parameters={}
+2020-08-07 14:42:20.903 [http-nio-5000-exec-5] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/assets/**] in 'resourceHandlerMapping'
+2020-08-07 14:42:20.913 [http-nio-5000-exec-5] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["file:E:\Mfans\CMS\deep-forest\assets/"]
+2020-08-07 14:42:20.956 [http-nio-5000-exec-5] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2020/08/07/4438f0d61b3a4dcf83baac69cc8ec01d.jpg] from: 0:0:0:0:0:0:0:1 costs: 40ms
+2020-08-07 14:42:20.957 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 14:43:40.834 [http-nio-5000-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 14:43:40.835 [http-nio-5000-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 14:43:40.836 [http-nio-5000-exec-7] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 0ms
+2020-08-07 14:43:40.836 [http-nio-5000-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 14:43:40.859 [http-nio-5000-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 14:43:40.859 [http-nio-5000-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 14:43:40.878 [http-nio-5000-exec-9] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 14:43:40.879 [http-nio-5000-exec-9] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: f5ed0d607a55c067c0d5599cfc42d5d0(String)
+2020-08-07 14:43:40.884 [http-nio-5000-exec-9] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 1
+2020-08-07 14:43:40.886 [http-nio-5000-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 14:43:40.886 [http-nio-5000-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=6, key=file, path=2020\08\07\4438f0d61b3a4dcf83baac69cc8ec01d.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 14:43:40.889 [http-nio-5000-exec-9] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 29ms
+2020-08-07 14:43:40.893 [http-nio-5000-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 14:43:50.039 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 14:43:50.040 [http-nio-5000-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 14:43:50.056 [http-nio-5000-exec-6] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 15ms
+2020-08-07 14:43:50.070 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 14:43:50.176 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 14:43:50.176 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 14:43:50.243 [http-nio-5000-exec-8] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 14:43:50.244 [http-nio-5000-exec-8] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 14:43:50.245 [http-nio-5000-exec-8] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 1
+2020-08-07 14:43:50.246 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 14:43:50.246 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=5, key=file, path=2020\08\07\ccf75002c17f4a8f84a7171851175663.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 14:43:50.247 [http-nio-5000-exec-8] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 70ms
+2020-08-07 14:43:50.284 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:03:58.686 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m43s554ms294µs400ns).
+2020-08-07 16:42:39.932 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 16:42:39.938 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:42:39.941 [http-nio-5000-exec-3] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 1ms
+2020-08-07 16:42:39.945 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:42:39.995 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 16:42:39.997 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:42:40.066 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 16:42:40.073 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 16:42:40.158 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 0
+2020-08-07 16:42:40.196 [http-nio-5000-exec-1] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - ==>  Preparing: INSERT INTO lin_file ( path, type, name, extension, size, md5 ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2020-08-07 16:42:40.201 [http-nio-5000-exec-1] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - ==> Parameters: 2020\08\07\d1853435880b431484f0bfb8a5b6ac2e.jpg(String), LOCAL(String), d1853435880b431484f0bfb8a5b6ac2e.jpg(String), .jpg(String), 423312(Integer), 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 16:42:40.353 [http-nio-5000-exec-1] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - <==    Updates: 1
+2020-08-07 16:42:40.381 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 16:42:40.384 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=7, key=file, path=2020\08\07\d1853435880b431484f0bfb8a5b6ac2e.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 16:42:40.391 [http-nio-5000-exec-1] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 388ms
+2020-08-07 16:42:40.394 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:44:26.367 [http-nio-5000-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 16:44:26.368 [http-nio-5000-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:44:26.370 [http-nio-5000-exec-7] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 1ms
+2020-08-07 16:44:26.370 [http-nio-5000-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:44:26.392 [http-nio-5000-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 16:44:26.392 [http-nio-5000-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:44:26.413 [http-nio-5000-exec-9] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 16:44:26.416 [http-nio-5000-exec-9] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 16:44:26.423 [http-nio-5000-exec-9] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 1
+2020-08-07 16:44:26.425 [http-nio-5000-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 16:44:26.425 [http-nio-5000-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=7, key=file, path=2020\08\07\d1853435880b431484f0bfb8a5b6ac2e.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 16:44:26.427 [http-nio-5000-exec-9] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 34ms
+2020-08-07 16:44:26.429 [http-nio-5000-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:44:26.461 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/assets/2020/08/07/d1853435880b431484f0bfb8a5b6ac2e.jpg", parameters={}
+2020-08-07 16:44:26.472 [http-nio-5000-exec-6] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["file:E:\Mfans\CMS\deep-forest\assets/"]
+2020-08-07 16:44:26.486 [http-nio-5000-exec-6] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2020/08/07/d1853435880b431484f0bfb8a5b6ac2e.jpg] from: 0:0:0:0:0:0:0:1 costs: 14ms
+2020-08-07 16:44:26.487 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:44:50.963 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 16:44:50.963 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:44:50.964 [http-nio-5000-exec-8] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 0ms
+2020-08-07 16:44:50.965 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:44:50.984 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 16:44:50.985 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:44:51.002 [http-nio-5000-exec-2] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 16:44:51.003 [http-nio-5000-exec-2] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 16:44:51.005 [http-nio-5000-exec-2] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 1
+2020-08-07 16:44:51.007 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 16:44:51.008 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=7, key=file, path=2020\08\07\d1853435880b431484f0bfb8a5b6ac2e.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 16:44:51.011 [http-nio-5000-exec-2] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 25ms
+2020-08-07 16:44:51.014 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:44:51.040 [http-nio-5000-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/assets/2020/08/07/d1853435880b431484f0bfb8a5b6ac2e.jpg", parameters={}
+2020-08-07 16:44:51.042 [http-nio-5000-exec-10] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["file:E:\Mfans\CMS\deep-forest\assets/"]
+2020-08-07 16:44:51.152 [http-nio-5000-exec-10] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2020/08/07/d1853435880b431484f0bfb8a5b6ac2e.jpg] from: 0:0:0:0:0:0:0:1 costs: 109ms
+2020-08-07 16:44:51.152 [http-nio-5000-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+2020-08-07 16:52:48.432 [http-nio-5000-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 16:52:48.434 [http-nio-5000-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:52:48.435 [http-nio-5000-exec-4] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 1ms
+2020-08-07 16:52:48.435 [http-nio-5000-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:52:48.506 [http-nio-5000-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 16:52:48.506 [http-nio-5000-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:52:48.521 [http-nio-5000-exec-7] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 16:52:48.522 [http-nio-5000-exec-7] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 16:52:48.523 [http-nio-5000-exec-7] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 1
+2020-08-07 16:52:48.524 [http-nio-5000-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 16:52:48.524 [http-nio-5000-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=7, key=file, path=2020\08\07\d1853435880b431484f0bfb8a5b6ac2e.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 16:52:48.525 [http-nio-5000-exec-7] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 18ms
+2020-08-07 16:52:48.527 [http-nio-5000-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:52:48.548 [http-nio-5000-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/assets/2020/08/07/d1853435880b431484f0bfb8a5b6ac2e.jpg", parameters={}
+2020-08-07 16:52:48.551 [http-nio-5000-exec-9] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["file:E:\Mfans\CMS\deep-forest\assets/"]
+2020-08-07 16:52:48.553 [http-nio-5000-exec-9] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2020/08/07/d1853435880b431484f0bfb8a5b6ac2e.jpg] from: 0:0:0:0:0:0:0:1 costs: 1ms
+2020-08-07 16:52:48.553 [http-nio-5000-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+2020-08-07 16:52:53.166 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 16:52:53.166 [http-nio-5000-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:52:53.169 [http-nio-5000-exec-6] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 1ms
+2020-08-07 16:52:53.169 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:52:53.187 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 16:52:53.189 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:52:53.202 [http-nio-5000-exec-8] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 16:52:53.203 [http-nio-5000-exec-8] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 16:52:53.204 [http-nio-5000-exec-8] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 1
+2020-08-07 16:52:53.205 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 16:52:53.206 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=7, key=file, path=2020\08\07\d1853435880b431484f0bfb8a5b6ac2e.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 16:52:53.207 [http-nio-5000-exec-8] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 18ms
+2020-08-07 16:52:53.209 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:53:37.376 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 16:53:37.378 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:53:37.446 [http-nio-5000-exec-2] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 51ms
+2020-08-07 16:53:37.447 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:53:37.467 [http-nio-5000-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 16:53:37.468 [http-nio-5000-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:53:37.480 [http-nio-5000-exec-10] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 16:53:37.482 [http-nio-5000-exec-10] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 16:53:37.483 [http-nio-5000-exec-10] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 1
+2020-08-07 16:53:37.484 [http-nio-5000-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 16:53:37.485 [http-nio-5000-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=7, key=file, path=2020\08\07\d1853435880b431484f0bfb8a5b6ac2e.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 16:53:37.486 [http-nio-5000-exec-10] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 17ms
+2020-08-07 16:53:37.488 [http-nio-5000-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:53:37.539 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/assets/2020/08/07/d1853435880b431484f0bfb8a5b6ac2e.jpg", parameters={}
+2020-08-07 16:53:37.541 [http-nio-5000-exec-3] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["file:E:\Mfans\CMS\deep-forest\assets/"]
+2020-08-07 16:53:37.543 [http-nio-5000-exec-3] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2020/08/07/d1853435880b431484f0bfb8a5b6ac2e.jpg] from: 0:0:0:0:0:0:0:1 costs: 2ms
+2020-08-07 16:53:37.544 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+2020-08-07 16:53:47.227 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 16:53:47.227 [http-nio-5000-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:53:47.228 [http-nio-5000-exec-5] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 0ms
+2020-08-07 16:53:47.229 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:53:47.247 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 16:53:47.248 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:53:47.266 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 16:53:47.266 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 16:53:47.268 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 1
+2020-08-07 16:53:47.269 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 16:53:47.269 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=7, key=file, path=2020\08\07\d1853435880b431484f0bfb8a5b6ac2e.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 16:53:47.271 [http-nio-5000-exec-1] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 22ms
+2020-08-07 16:53:47.273 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:56:45.212 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 16:56:45.212 [http-nio-5000-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:56:45.213 [http-nio-5000-exec-6] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 0ms
+2020-08-07 16:56:45.214 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:56:45.252 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 16:56:45.252 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:56:45.268 [http-nio-5000-exec-8] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 16:56:45.270 [http-nio-5000-exec-8] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 16:56:45.273 [http-nio-5000-exec-8] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 1
+2020-08-07 16:56:45.275 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 16:56:45.276 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=7, key=file, path=2020\08\07\d1853435880b431484f0bfb8a5b6ac2e.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 16:56:45.278 [http-nio-5000-exec-8] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 24ms
+2020-08-07 16:56:45.280 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:58:00.452 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 16:58:00.453 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:58:00.453 [http-nio-5000-exec-3] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 0ms
+2020-08-07 16:58:00.453 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:58:00.482 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 16:58:00.483 [http-nio-5000-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:58:00.496 [http-nio-5000-exec-5] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 16:58:00.496 [http-nio-5000-exec-5] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 16:58:00.499 [http-nio-5000-exec-5] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 1
+2020-08-07 16:58:00.500 [http-nio-5000-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 16:58:00.501 [http-nio-5000-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=7, key=file, path=2020\08\07\d1853435880b431484f0bfb8a5b6ac2e.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 16:58:00.503 [http-nio-5000-exec-5] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 19ms
+2020-08-07 16:58:00.505 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:58:00.532 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/assets/2020/08/07/d1853435880b431484f0bfb8a5b6ac2e.jpg", parameters={}
+2020-08-07 16:58:00.534 [http-nio-5000-exec-1] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["file:E:\Mfans\CMS\deep-forest\assets/"]
+2020-08-07 16:58:00.535 [http-nio-5000-exec-1] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2020/08/07/d1853435880b431484f0bfb8a5b6ac2e.jpg] from: 0:0:0:0:0:0:0:1 costs: 1ms
+2020-08-07 16:58:00.535 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+2020-08-07 16:59:22.451 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 16:59:22.452 [http-nio-5000-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:59:22.452 [http-nio-5000-exec-6] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 0ms
+2020-08-07 16:59:22.453 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:59:22.470 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 16:59:22.471 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:59:22.484 [http-nio-5000-exec-8] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 16:59:22.485 [http-nio-5000-exec-8] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 16:59:22.487 [http-nio-5000-exec-8] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 1
+2020-08-07 16:59:22.489 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 16:59:22.489 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=7, key=file, path=2020\08\07\d1853435880b431484f0bfb8a5b6ac2e.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 16:59:22.491 [http-nio-5000-exec-8] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 19ms
+2020-08-07 16:59:22.494 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:59:22.525 [http-nio-5000-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/assets/2020/08/07/d1853435880b431484f0bfb8a5b6ac2e.jpg", parameters={}
+2020-08-07 16:59:22.527 [http-nio-5000-exec-10] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["file:E:\Mfans\CMS\deep-forest\assets/"]
+2020-08-07 16:59:22.529 [http-nio-5000-exec-10] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2020/08/07/d1853435880b431484f0bfb8a5b6ac2e.jpg] from: 0:0:0:0:0:0:0:1 costs: 1ms
+2020-08-07 16:59:22.529 [http-nio-5000-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+2020-08-07 16:59:24.489 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 16:59:24.489 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:59:24.490 [http-nio-5000-exec-2] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 1ms
+2020-08-07 16:59:24.490 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 16:59:24.508 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 16:59:24.509 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 16:59:24.519 [http-nio-5000-exec-3] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 16:59:24.519 [http-nio-5000-exec-3] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 16:59:24.521 [http-nio-5000-exec-3] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 1
+2020-08-07 16:59:24.521 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 16:59:24.522 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=7, key=file, path=2020\08\07\d1853435880b431484f0bfb8a5b6ac2e.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 16:59:24.523 [http-nio-5000-exec-3] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 13ms
+2020-08-07 16:59:24.524 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 17:00:29.995 [http-nio-5000-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 17:00:29.995 [http-nio-5000-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 17:00:29.996 [http-nio-5000-exec-9] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 0ms
+2020-08-07 17:00:29.996 [http-nio-5000-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 17:00:30.012 [http-nio-5000-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 17:00:30.013 [http-nio-5000-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 17:00:30.029 [http-nio-5000-exec-7] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 17:00:30.030 [http-nio-5000-exec-7] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 17:00:30.032 [http-nio-5000-exec-7] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 1
+2020-08-07 17:00:30.033 [http-nio-5000-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 17:00:30.034 [http-nio-5000-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=7, key=file, path=2020\08\07\d1853435880b431484f0bfb8a5b6ac2e.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 17:00:30.037 [http-nio-5000-exec-7] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 24ms
+2020-08-07 17:00:30.039 [http-nio-5000-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 17:00:30.071 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/assets/2020/08/07/d1853435880b431484f0bfb8a5b6ac2e.jpg", parameters={}
+2020-08-07 17:00:30.074 [http-nio-5000-exec-6] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["file:E:\Mfans\CMS\deep-forest\assets/"]
+2020-08-07 17:00:30.077 [http-nio-5000-exec-6] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2020/08/07/d1853435880b431484f0bfb8a5b6ac2e.jpg] from: 0:0:0:0:0:0:0:1 costs: 1ms
+2020-08-07 17:00:30.077 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+2020-08-07 17:00:40.193 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 17:00:40.194 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 17:00:40.194 [http-nio-5000-exec-8] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 0ms
+2020-08-07 17:00:40.195 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 17:00:40.236 [http-nio-5000-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 17:00:40.238 [http-nio-5000-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 17:00:40.260 [http-nio-5000-exec-10] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 17:00:40.261 [http-nio-5000-exec-10] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: f5ed0d607a55c067c0d5599cfc42d5d0(String)
+2020-08-07 17:00:40.263 [http-nio-5000-exec-10] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 0
+2020-08-07 17:00:40.266 [http-nio-5000-exec-10] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - ==>  Preparing: INSERT INTO lin_file ( path, type, name, extension, size, md5 ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2020-08-07 17:00:40.267 [http-nio-5000-exec-10] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - ==> Parameters: 2020\08\07\748e3abd8fcf4a07b14d8cfe975040fd.jpg(String), LOCAL(String), 748e3abd8fcf4a07b14d8cfe975040fd.jpg(String), .jpg(String), 525636(Integer), f5ed0d607a55c067c0d5599cfc42d5d0(String)
+2020-08-07 17:00:40.407 [http-nio-5000-exec-10] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - <==    Updates: 1
+2020-08-07 17:00:40.409 [http-nio-5000-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 17:00:40.410 [http-nio-5000-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=8, key=file, path=2020\08\07\748e3abd8fcf4a07b14d8cfe975040fd.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 17:00:40.411 [http-nio-5000-exec-10] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 172ms
+2020-08-07 17:00:40.414 [http-nio-5000-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 17:00:40.431 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/assets/2020/08/07/748e3abd8fcf4a07b14d8cfe975040fd.jpg", parameters={}
+2020-08-07 17:00:40.433 [http-nio-5000-exec-2] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["file:E:\Mfans\CMS\deep-forest\assets/"]
+2020-08-07 17:00:40.440 [http-nio-5000-exec-2] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2020/08/07/748e3abd8fcf4a07b14d8cfe975040fd.jpg] from: 0:0:0:0:0:0:0:1 costs: 7ms
+2020-08-07 17:00:40.441 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 17:02:01.360 [http-nio-5000-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 17:02:01.360 [http-nio-5000-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 17:02:01.361 [http-nio-5000-exec-4] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 0ms
+2020-08-07 17:02:01.361 [http-nio-5000-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 17:02:01.382 [http-nio-5000-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 17:02:01.382 [http-nio-5000-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 17:02:01.396 [http-nio-5000-exec-9] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 17:02:01.397 [http-nio-5000-exec-9] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 17:02:01.399 [http-nio-5000-exec-9] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 1
+2020-08-07 17:02:01.401 [http-nio-5000-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 17:02:01.401 [http-nio-5000-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=7, key=file, path=2020\08\07\d1853435880b431484f0bfb8a5b6ac2e.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 17:02:01.402 [http-nio-5000-exec-9] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 19ms
+2020-08-07 17:02:01.405 [http-nio-5000-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 17:02:01.455 [http-nio-5000-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/assets/2020/08/07/d1853435880b431484f0bfb8a5b6ac2e.jpg", parameters={}
+2020-08-07 17:02:01.457 [http-nio-5000-exec-7] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["file:E:\Mfans\CMS\deep-forest\assets/"]
+2020-08-07 17:02:01.458 [http-nio-5000-exec-7] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2020/08/07/d1853435880b431484f0bfb8a5b6ac2e.jpg] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2020-08-07 17:02:01.458 [http-nio-5000-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 304 NOT_MODIFIED
+2020-08-07 17:02:15.549 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 17:02:15.549 [http-nio-5000-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 17:02:15.550 [http-nio-5000-exec-6] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 0ms
+2020-08-07 17:02:15.550 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 17:02:15.570 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 17:02:15.571 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 17:02:15.587 [http-nio-5000-exec-8] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 17:02:15.588 [http-nio-5000-exec-8] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 17:02:15.589 [http-nio-5000-exec-8] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 1
+2020-08-07 17:02:15.590 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 17:02:15.591 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=7, key=file, path=2020\08\07\d1853435880b431484f0bfb8a5b6ac2e.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 17:02:15.594 [http-nio-5000-exec-8] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 23ms
+2020-08-07 17:02:15.600 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 17:05:25.452 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 17:05:25.452 [http-nio-5000-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 17:05:25.454 [http-nio-5000-exec-5] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 1ms
+2020-08-07 17:05:25.454 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 17:05:25.474 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 17:05:25.475 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 17:05:25.493 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 17:05:25.494 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 17:05:25.499 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 1
+2020-08-07 17:05:25.503 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 17:05:25.504 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=7, key=file, path=2020\08\07\d1853435880b431484f0bfb8a5b6ac2e.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 17:05:25.507 [http-nio-5000-exec-1] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 31ms
+2020-08-07 17:05:25.508 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 17:05:32.659 [http-nio-5000-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/v1/banner", parameters={}
+2020-08-07 17:05:32.660 [http-nio-5000-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#create(BannerDTO)
+2020-08-07 17:05:32.664 [http-nio-5000-exec-4] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/banner] from: 127.0.0.1 costs: 2ms
+2020-08-07 17:05:32.664 [http-nio-5000-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 17:05:32.693 [http-nio-5000-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/v1/banner", parameters={}
+2020-08-07 17:05:32.693 [http-nio-5000-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#create(BannerDTO)
+2020-08-07 17:05:32.780 [http-nio-5000-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=utf-8" to [io.github.talelin.latticy.dto.BannerDTO@2e3e9480]
+2020-08-07 17:05:33.026 [http-nio-5000-exec-9] DEBUG i.g.talelin.latticy.mapper.BannerMapper.insert - ==>  Preparing: INSERT INTO banner ( name, title, description ) VALUES ( ?, ?, ? ) 
+2020-08-07 17:05:33.027 [http-nio-5000-exec-9] DEBUG i.g.talelin.latticy.mapper.BannerMapper.insert - ==> Parameters: 1111(String), 22(String), 3333333(String)
+2020-08-07 17:05:33.151 [http-nio-5000-exec-9] DEBUG i.g.talelin.latticy.mapper.BannerMapper.insert - <==    Updates: 1
+2020-08-07 17:05:33.175 [http-nio-5000-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 17:05:33.175 [http-nio-5000-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [UnifyResponseVO(code=1, message=创建成功, request=POST /v1/banner)]
+2020-08-07 17:05:33.180 [http-nio-5000-exec-9] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/v1/banner] from: 127.0.0.1 costs: 486ms
+2020-08-07 17:05:33.180 [http-nio-5000-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 201 CREATED
+2020-08-07 17:09:03.887 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/file", parameters={}
+2020-08-07 17:09:03.887 [http-nio-5000-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 17:09:03.888 [http-nio-5000-exec-8] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 127.0.0.1 costs: 1ms
+2020-08-07 17:09:03.888 [http-nio-5000-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 17:09:03.911 [http-nio-5000-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/file", parameters={}
+2020-08-07 17:09:03.911 [http-nio-5000-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.cms.FileController#upload(MultipartHttpServletRequest)
+2020-08-07 17:09:03.929 [http-nio-5000-exec-10] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==>  Preparing: SELECT * FROM lin_file f WHERE f.md5 = ? AND f.delete_time IS NULL 
+2020-08-07 17:09:03.930 [http-nio-5000-exec-10] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - ==> Parameters: 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 17:09:03.931 [http-nio-5000-exec-10] DEBUG i.g.talelin.latticy.mapper.FileMapper.selectByMd5 - <==      Total: 0
+2020-08-07 17:09:03.937 [http-nio-5000-exec-10] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - ==>  Preparing: INSERT INTO lin_file ( path, type, name, extension, size, md5 ) VALUES ( ?, ?, ?, ?, ?, ? ) 
+2020-08-07 17:09:03.941 [http-nio-5000-exec-10] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - ==> Parameters: 2020\08\07\1ee8aa0b8c9a433fa18d9b0fa36a71b6.jpg(String), LOCAL(String), 1ee8aa0b8c9a433fa18d9b0fa36a71b6.jpg(String), .jpg(String), 423312(Integer), 6d51dc2b3919049a05c01edebb21cae0(String)
+2020-08-07 17:09:04.051 [http-nio-5000-exec-10] DEBUG io.github.talelin.latticy.mapper.FileMapper.insert - <==    Updates: 1
+2020-08-07 17:09:04.149 [http-nio-5000-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 17:09:04.149 [http-nio-5000-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[FileBO(id=9, key=file, path=2020\08\07\1ee8aa0b8c9a433fa18d9b0fa36a71b6.jpg, url=http://localhost:5 (truncated)...]
+2020-08-07 17:09:04.151 [http-nio-5000-exec-10] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 127.0.0.1 costs: 239ms
+2020-08-07 17:09:04.153 [http-nio-5000-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 17:09:04.170 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/assets/2020/08/07/1ee8aa0b8c9a433fa18d9b0fa36a71b6.jpg", parameters={}
+2020-08-07 17:09:04.171 [http-nio-5000-exec-2] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["file:E:\Mfans\CMS\deep-forest\assets/"]
+2020-08-07 17:09:04.177 [http-nio-5000-exec-2] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2020/08/07/1ee8aa0b8c9a433fa18d9b0fa36a71b6.jpg] from: 0:0:0:0:0:0:0:1 costs: 5ms
+2020-08-07 17:09:04.177 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 17:09:09.867 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/v1/banner", parameters={}
+2020-08-07 17:09:09.872 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#create(BannerDTO)
+2020-08-07 17:09:09.873 [http-nio-5000-exec-3] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/banner] from: 127.0.0.1 costs: 0ms
+2020-08-07 17:09:09.874 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 17:09:09.885 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/v1/banner", parameters={}
+2020-08-07 17:09:09.885 [http-nio-5000-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#create(BannerDTO)
+2020-08-07 17:09:09.891 [http-nio-5000-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=utf-8" to [io.github.talelin.latticy.dto.BannerDTO@19d14904]
+2020-08-07 17:09:09.897 [http-nio-5000-exec-5] DEBUG i.g.talelin.latticy.mapper.BannerMapper.insert - ==>  Preparing: INSERT INTO banner ( name, title, description, img ) VALUES ( ?, ?, ?, ? ) 
+2020-08-07 17:09:09.898 [http-nio-5000-exec-5] DEBUG i.g.talelin.latticy.mapper.BannerMapper.insert - ==> Parameters: test-one(String), 2222(String), wwwww(String), http://localhost:5000/assets/2020/08/07/1ee8aa0b8c9a433fa18d9b0fa36a71b6.jpg(String)
+2020-08-07 17:09:09.986 [http-nio-5000-exec-5] DEBUG i.g.talelin.latticy.mapper.BannerMapper.insert - <==    Updates: 1
+2020-08-07 17:09:09.990 [http-nio-5000-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 17:09:09.991 [http-nio-5000-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [UnifyResponseVO(code=1, message=创建成功, request=POST /v1/banner)]
+2020-08-07 17:09:09.994 [http-nio-5000-exec-5] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [POST] -> [/v1/banner] from: 127.0.0.1 costs: 108ms
+2020-08-07 17:09:09.994 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 201 CREATED
+2020-08-07 17:09:54.708 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v1/banner/page?page=1&count=10", parameters={masked}
+2020-08-07 17:09:54.708 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#getBanners(Integer, Integer)
+2020-08-07 17:09:54.773 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM banner WHERE delete_time IS NULL 
+2020-08-07 17:09:54.775 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==> Parameters: 
+2020-08-07 17:09:54.834 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==>  Preparing: SELECT id,name,title,description,img,create_time,update_time,delete_time FROM banner WHERE delete_time IS NULL LIMIT ?,? 
+2020-08-07 17:09:54.836 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2020-08-07 17:09:54.842 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - <==      Total: 3
+2020-08-07 17:09:54.866 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 17:09:54.867 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [PageResponseVO(total=3, items=[io.github.talelin.latticy.model.BannerDO@52f0ae42, io.github.talelin. (truncated)...]
+2020-08-07 17:09:54.889 [http-nio-5000-exec-1] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/banner/page] from: 127.0.0.1 costs: 180ms
+2020-08-07 17:09:54.890 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 17:09:58.432 [http-nio-5000-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v1/banner/10", parameters={}
+2020-08-07 17:09:58.434 [http-nio-5000-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#getWithItems(Integer)
+2020-08-07 17:09:58.453 [http-nio-5000-exec-4] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - ==>  Preparing: SELECT id,name,title,description,img,create_time,update_time,delete_time FROM banner WHERE id=? AND delete_time IS NULL 
+2020-08-07 17:09:58.455 [http-nio-5000-exec-4] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - ==> Parameters: 10(Integer)
+2020-08-07 17:09:58.457 [http-nio-5000-exec-4] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - <==      Total: 1
+2020-08-07 17:09:58.593 [http-nio-5000-exec-4] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - ==>  Preparing: SELECT id,name,img,keyword,type,banner_id,create_time,update_time,delete_time FROM banner_item WHERE delete_time IS NULL AND (banner_id = ?) 
+2020-08-07 17:09:58.594 [http-nio-5000-exec-4] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - ==> Parameters: 10(Integer)
+2020-08-07 17:09:58.602 [http-nio-5000-exec-4] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - <==      Total: 0
+2020-08-07 17:09:58.658 [http-nio-5000-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-07 17:09:58.659 [http-nio-5000-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [BannerWithItemsBO(id=10, name=test-one, title=2222, img=http://localhost:5000/assets/2020/08/07/1ee8 (truncated)...]
+2020-08-07 17:09:58.673 [http-nio-5000-exec-4] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/banner/10] from: 127.0.0.1 costs: 238ms
+2020-08-07 17:09:58.674 [http-nio-5000-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-07 18:03:57.196 [SpringContextShutdownHook] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[io.github.talelin.latticy.mapper]' package. Please check your configuration.

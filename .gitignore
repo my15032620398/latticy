@@ -32,7 +32,7 @@ build/
 
 ### VS Code ###
 .vscode/
-assets/
-logs/
+#assets/
+#logs/
 
 

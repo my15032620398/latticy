@@ -1,0 +1,459 @@
+2020-08-12 07:54:25.335 [main] INFO  io.github.talelin.latticy.LatticyApplication - Starting LatticyApplication on DESKTOP-CN6PMV5 with PID 12668 (E:\Mfans\CMS\deep-forest\target\classes started by mengyue in E:\Mfans\CMS\deep-forest)
+2020-08-12 07:54:25.339 [main] INFO  io.github.talelin.latticy.LatticyApplication - The following profiles are active: dev
+2020-08-12 07:54:29.736 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.talelin.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-12 07:54:30.426 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2020-08-12 07:54:30.476 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2020-08-12 07:54:30.478 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-12 07:54:30.478 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-08-12 07:54:30.672 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-08-12 07:54:30.673 [main] DEBUG org.springframework.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-08-12 07:54:30.673 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5206 ms
+2020-08-12 07:54:30.703 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2020-08-12 07:54:30.703 [main] DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2020-08-12 07:54:31.095 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-08-12 07:54:31.458 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-08-12 07:54:35.400 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-12 07:54:35.432 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-08-12 07:54:35.545 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 122 mappings in 'requestMappingHandlerMapping'
+2020-08-12 07:54:35.581 [main] DEBUG o.s.web.servlet.config.annotation.WebMvcConfigurer - Default resource handling disabled
+2020-08-12 07:54:35.598 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/assets/**] in 'resourceHandlerMapping'
+2020-08-12 07:54:35.620 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-08-12 07:54:36.048 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.083 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除专题下的spu(String), 主题(String)
+2020-08-12 07:54:36.437 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.442 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.442 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除六宫格(String), 六宫格(String)
+2020-08-12 07:54:36.444 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.446 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.447 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询所有日志(String), 日志(String)
+2020-08-12 07:54:36.449 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.451 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.452 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除主题(String), 主题(String)
+2020-08-12 07:54:36.453 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.455 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.456 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 测试日志记录(String), 信息(String)
+2020-08-12 07:54:36.457 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.459 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.460 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新SKU(String), SKU(String)
+2020-08-12 07:54:36.462 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.464 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.465 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新SPU(String), SPU(String)
+2020-08-12 07:54:36.466 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.468 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.469 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除SKU(String), SKU(String)
+2020-08-12 07:54:36.471 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.473 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.473 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 测试日志记录(String), 信息(String)
+2020-08-12 07:54:36.475 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.477 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.477 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除六宫格(String), 六宫格(String)
+2020-08-12 07:54:36.478 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.480 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.481 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新规格值(String), 规格值(String)
+2020-08-12 07:54:36.483 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.485 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.485 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新分类(String), 分类(String)
+2020-08-12 07:54:36.487 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.489 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.490 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新主题(String), 主题(String)
+2020-08-12 07:54:36.491 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.493 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.493 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新分类(String), 分类(String)
+2020-08-12 07:54:36.494 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.496 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.497 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除分类(String), 分类(String)
+2020-08-12 07:54:36.498 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.501 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.502 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除规格名(String), 规格名(String)
+2020-08-12 07:54:36.505 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.507 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.507 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除SPU(String), SPU(String)
+2020-08-12 07:54:36.510 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.511 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.512 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查看lin的信息(String), 信息(String)
+2020-08-12 07:54:36.512 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.514 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.514 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除图书(String), 图书(String)
+2020-08-12 07:54:36.516 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.517 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.518 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除SPU(String), SPU(String)
+2020-08-12 07:54:36.519 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.521 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.522 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新优惠券模板(String), 优惠券(String)
+2020-08-12 07:54:36.523 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.524 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.525 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新规格名(String), 规格名(String)
+2020-08-12 07:54:36.526 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.528 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.528 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新主题(String), 主题(String)
+2020-08-12 07:54:36.529 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.531 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.531 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除规格值(String), 规格值(String)
+2020-08-12 07:54:36.532 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.534 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.535 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新SKU(String), SKU(String)
+2020-08-12 07:54:36.536 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.538 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.539 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除主题(String), 主题(String)
+2020-08-12 07:54:36.540 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.542 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.542 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查看lin的信息(String), 信息(String)
+2020-08-12 07:54:36.544 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.545 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.546 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 修改订单状态(String), 订单(String)
+2020-08-12 07:54:36.547 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.549 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.549 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新规格值(String), 规格值(String)
+2020-08-12 07:54:36.551 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.553 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.554 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新优惠券模板(String), 优惠券(String)
+2020-08-12 07:54:36.555 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.557 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.557 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建SPU(String), SPU(String)
+2020-08-12 07:54:36.558 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.560 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.560 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除优惠券(String), 优惠券(String)
+2020-08-12 07:54:36.561 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.563 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.564 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建主题(String), 主题(String)
+2020-08-12 07:54:36.565 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.567 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.567 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建主题(String), 主题(String)
+2020-08-12 07:54:36.568 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.570 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.570 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除图书(String), 图书(String)
+2020-08-12 07:54:36.571 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.573 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.573 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除专题下的spu(String), 主题(String)
+2020-08-12 07:54:36.574 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.576 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.576 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除活动(String), 活动(String)
+2020-08-12 07:54:36.577 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.579 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.579 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建规格值(String), 规格值(String)
+2020-08-12 07:54:36.580 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.582 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.582 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建优惠券(String), 优惠券(String)
+2020-08-12 07:54:36.583 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.585 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.585 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新六宫格(String), 六宫格(String)
+2020-08-12 07:54:36.586 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.588 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.588 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建规格名(String), 规格名(String)
+2020-08-12 07:54:36.589 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.591 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.591 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建SKU(String), SKU(String)
+2020-08-12 07:54:36.592 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.594 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.594 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除SKU(String), SKU(String)
+2020-08-12 07:54:36.595 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.597 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.597 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建分类(String), 分类(String)
+2020-08-12 07:54:36.599 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.600 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.601 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新六宫格(String), 六宫格(String)
+2020-08-12 07:54:36.602 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.604 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.604 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建活动(String), 活动(String)
+2020-08-12 07:54:36.605 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.607 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.607 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除规格名(String), 规格名(String)
+2020-08-12 07:54:36.608 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.610 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.610 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建分类(String), 分类(String)
+2020-08-12 07:54:36.611 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.613 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.613 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新规格名(String), 规格名(String)
+2020-08-12 07:54:36.614 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.616 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.617 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建专题下的spu(String), 主题(String)
+2020-08-12 07:54:36.618 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.619 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.620 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除活动(String), 活动(String)
+2020-08-12 07:54:36.621 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.623 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.624 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建优惠券模板(String), 优惠券(String)
+2020-08-12 07:54:36.625 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.627 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.627 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建六宫格(String), 六宫格(String)
+2020-08-12 07:54:36.628 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.630 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.630 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建规格值(String), 规格值(String)
+2020-08-12 07:54:36.631 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.633 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.633 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 搜索日志(String), 日志(String)
+2020-08-12 07:54:36.643 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.646 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.647 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新活动(String), 活动(String)
+2020-08-12 07:54:36.649 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.651 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.652 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询所有日志(String), 日志(String)
+2020-08-12 07:54:36.653 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.656 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.657 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建优惠券(String), 优惠券(String)
+2020-08-12 07:54:36.659 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.661 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.662 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建SPU(String), SPU(String)
+2020-08-12 07:54:36.663 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.666 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.666 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建六宫格(String), 六宫格(String)
+2020-08-12 07:54:36.668 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.671 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.671 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建专题下的spu(String), 主题(String)
+2020-08-12 07:54:36.673 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.677 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.678 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新优惠券(String), 优惠券(String)
+2020-08-12 07:54:36.680 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.683 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.684 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 搜索日志(String), 日志(String)
+2020-08-12 07:54:36.685 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.688 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.689 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建优惠券模板(String), 优惠券(String)
+2020-08-12 07:54:36.690 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.693 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.693 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除优惠券(String), 优惠券(String)
+2020-08-12 07:54:36.695 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.697 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.698 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除规格值(String), 规格值(String)
+2020-08-12 07:54:36.699 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.702 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.702 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询日志记录的用户(String), 日志(String)
+2020-08-12 07:54:36.704 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.706 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.707 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 删除分类(String), 分类(String)
+2020-08-12 07:54:36.708 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.736 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.737 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新优惠券(String), 优惠券(String)
+2020-08-12 07:54:36.739 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.742 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.742 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建SKU(String), SKU(String)
+2020-08-12 07:54:36.743 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.745 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.745 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新SPU(String), SPU(String)
+2020-08-12 07:54:36.746 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.748 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.748 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建规格名(String), 规格名(String)
+2020-08-12 07:54:36.749 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.751 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.751 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 更新活动(String), 活动(String)
+2020-08-12 07:54:36.752 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.754 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.754 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 修改订单状态(String), 订单(String)
+2020-08-12 07:54:36.755 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.757 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.757 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 创建活动(String), 活动(String)
+2020-08-12 07:54:36.758 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.759 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL AND (name = ? AND module = ?) 
+2020-08-12 07:54:36.760 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - ==> Parameters: 查询日志记录的用户(String), 日志(String)
+2020-08-12 07:54:36.761 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectOne - <==      Total: 1
+2020-08-12 07:54:36.772 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectList - ==>  Preparing: SELECT id,name,module,mount,create_time,update_time,delete_time FROM lin_permission WHERE delete_time IS NULL 
+2020-08-12 07:54:36.773 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectList - ==> Parameters: 
+2020-08-12 07:54:36.778 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.selectList - <==      Total: 52
+2020-08-12 07:54:36.791 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-12 07:54:36.794 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 创建活动(String), (String), false(Boolean), 2020-06-27 01:02:20.804(Timestamp), 2020-06-27 01:02:20.804(Timestamp), 5(Integer)
+2020-08-12 07:54:36.907 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-12 07:54:36.908 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-12 07:54:36.909 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 删除活动(String), (String), false(Boolean), 2020-06-27 01:02:21.23(Timestamp), 2020-06-27 01:02:21.23(Timestamp), 6(Integer)
+2020-08-12 07:54:36.910 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-12 07:54:36.911 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-12 07:54:36.911 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 更新活动(String), (String), false(Boolean), 2020-06-27 01:02:21.465(Timestamp), 2020-06-27 01:02:21.465(Timestamp), 7(Integer)
+2020-08-12 07:54:36.912 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-12 07:54:36.914 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-12 07:54:36.915 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 更新Banner(String), Banner(String), false(Boolean), 2020-06-28 01:39:10.304(Timestamp), 2020-06-28 01:39:10.304(Timestamp), 8(Integer)
+2020-08-12 07:54:36.936 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-12 07:54:36.938 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-12 07:54:36.939 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 更新Banner item(String), Banner item(String), false(Boolean), 2020-06-28 01:39:11.27(Timestamp), 2020-06-28 01:39:11.27(Timestamp), 10(Integer)
+2020-08-12 07:54:36.940 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-12 07:54:36.942 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-12 07:54:36.943 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 删除Banner(String), Banner(String), false(Boolean), 2020-06-28 01:39:11.516(Timestamp), 2020-06-28 01:39:11.516(Timestamp), 12(Integer)
+2020-08-12 07:54:36.944 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-12 07:54:36.947 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-12 07:54:36.947 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 查询Banner item(String), Banner item(String), false(Boolean), 2020-06-28 01:39:11.619(Timestamp), 2020-06-28 01:39:11.619(Timestamp), 13(Integer)
+2020-08-12 07:54:36.948 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-12 07:54:36.950 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-12 07:54:36.952 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 创建Banner(String), Banner(String), false(Boolean), 2020-06-28 01:39:11.954(Timestamp), 2020-06-28 01:39:11.954(Timestamp), 14(Integer)
+2020-08-12 07:54:36.953 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-12 07:54:36.955 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-12 07:54:36.955 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 删除Banner item(String), Banner item(String), false(Boolean), 2020-06-28 01:39:12.149(Timestamp), 2020-06-28 01:39:12.149(Timestamp), 15(Integer)
+2020-08-12 07:54:36.956 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-12 07:54:36.958 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-12 07:54:36.959 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 查询Banner(String), Banner(String), false(Boolean), 2020-06-28 01:39:12.732(Timestamp), 2020-06-28 01:39:12.732(Timestamp), 20(Integer)
+2020-08-12 07:54:36.960 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-12 07:54:36.962 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-12 07:54:36.963 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 创建Banner item(String), Banner item(String), false(Boolean), 2020-06-30 20:58:35.154(Timestamp), 2020-06-30 20:58:35.154(Timestamp), 42(Integer)
+2020-08-12 07:54:36.964 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-12 07:54:36.966 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-12 07:54:36.966 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 创建Banner(String), (String), false(Boolean), 2020-08-03 22:32:22.859(Timestamp), 2020-08-03 22:32:22.859(Timestamp), 50(Integer)
+2020-08-12 07:54:36.968 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-12 07:54:36.970 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-12 07:54:36.971 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 删除Banner(String), (String), false(Boolean), 2020-08-03 22:32:23.161(Timestamp), 2020-08-03 22:32:23.161(Timestamp), 51(Integer)
+2020-08-12 07:54:36.972 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-12 07:54:36.973 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==>  Preparing: UPDATE lin_permission SET name=?, module=?, mount=?, create_time=?, update_time=? WHERE id=? AND delete_time IS NULL 
+2020-08-12 07:54:36.974 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - ==> Parameters: 更新Banner(String), (String), false(Boolean), 2020-08-03 22:32:23.336(Timestamp), 2020-08-03 22:32:23.336(Timestamp), 52(Integer)
+2020-08-12 07:54:36.975 [main] DEBUG i.g.t.latticy.mapper.PermissionMapper.updateById - <==    Updates: 1
+2020-08-12 07:54:36.981 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2020-08-12 07:54:37.025 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2020-08-12 07:54:37.031 [main] INFO  io.github.talelin.latticy.LatticyApplication - Started LatticyApplication in 12.684 seconds (JVM running for 23.838)
+2020-08-12 07:56:40.529 [http-nio-5000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-12 07:56:40.530 [http-nio-5000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-12 07:56:40.530 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-08-12 07:56:40.545 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-08-12 07:56:40.546 [http-nio-5000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2020-08-12 07:56:40.566 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v1/banner/page?page=1&count=10", parameters={masked}
+2020-08-12 07:56:40.573 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#getBanners(Integer, Integer)
+2020-08-12 07:56:40.831 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM banner WHERE delete_time IS NULL 
+2020-08-12 07:56:40.833 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==> Parameters: 
+2020-08-12 07:56:40.899 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==>  Preparing: SELECT id,name,title,description,img,create_time,update_time,delete_time FROM banner WHERE delete_time IS NULL LIMIT ?,? 
+2020-08-12 07:56:40.901 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2020-08-12 07:56:40.909 [http-nio-5000-exec-1] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - <==      Total: 3
+2020-08-12 07:56:41.032 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-12 07:56:41.034 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [PageResponseVO(total=3, items=[io.github.talelin.latticy.model.BannerDO@51dff2b7, io.github.talelin. (truncated)...]
+2020-08-12 07:56:41.080 [http-nio-5000-exec-1] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/banner/page] from: 127.0.0.1 costs: 469ms
+2020-08-12 07:56:41.122 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-12 07:56:41.236 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/assets/2020/08/10/2ca0c139328c4f8896d08f34e4cba1a5.png", parameters={}
+2020-08-12 07:56:41.247 [http-nio-5000-exec-2] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["file:E:\Mfans\CMS\deep-forest\assets/"]
+2020-08-12 07:56:41.264 [http-nio-5000-exec-2] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2020-08-12 07:56:41.264 [http-nio-5000-exec-2] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2020/08/10/2ca0c139328c4f8896d08f34e4cba1a5.png] from: 127.0.0.1 costs: 14ms
+2020-08-12 07:56:41.264 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-08-12 07:56:41.276 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-08-12 07:56:41.277 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-12 07:56:41.295 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [image/webp, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-12 07:56:41.295 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 12 07:56:41 CST 2020, status=404, error=Not Found, message=No message available,  (truncated)...]
+2020-08-12 07:56:41.309 [http-nio-5000-exec-2] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/error] from: 127.0.0.1 costs: 31ms
+2020-08-12 07:56:41.310 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-08-12 07:56:44.219 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v1/banner/11", parameters={}
+2020-08-12 07:56:44.222 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#getWithItems(Integer)
+2020-08-12 07:56:44.250 [http-nio-5000-exec-3] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - ==>  Preparing: SELECT id,name,title,description,img,create_time,update_time,delete_time FROM banner WHERE id=? AND delete_time IS NULL 
+2020-08-12 07:56:44.253 [http-nio-5000-exec-3] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - ==> Parameters: 11(Integer)
+2020-08-12 07:56:44.280 [http-nio-5000-exec-3] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - <==      Total: 1
+2020-08-12 07:56:44.296 [http-nio-5000-exec-3] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - ==>  Preparing: SELECT id,name,img,keyword,type,banner_id,create_time,update_time,delete_time FROM banner_item WHERE delete_time IS NULL AND (banner_id = ?) 
+2020-08-12 07:56:44.296 [http-nio-5000-exec-3] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - ==> Parameters: 11(Integer)
+2020-08-12 07:56:44.300 [http-nio-5000-exec-3] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - <==      Total: 1
+2020-08-12 07:56:44.326 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-12 07:56:44.327 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [BannerWithItemsBO(id=11, name=测试1, title=Test-one, img=http://localhost:5000/assets/2020/08/10/2ca0c (truncated)...]
+2020-08-12 07:56:44.333 [http-nio-5000-exec-3] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/banner/11] from: 127.0.0.1 costs: 110ms
+2020-08-12 07:56:44.334 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-12 07:56:44.378 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/assets/2020/08/10/2ca0c139328c4f8896d08f34e4cba1a5.png", parameters={}
+2020-08-12 07:56:44.379 [http-nio-5000-exec-6] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["file:E:\Mfans\CMS\deep-forest\assets/"]
+2020-08-12 07:56:44.380 [http-nio-5000-exec-6] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2020-08-12 07:56:44.380 [http-nio-5000-exec-6] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2020/08/10/2ca0c139328c4f8896d08f34e4cba1a5.png] from: 127.0.0.1 costs: 0ms
+2020-08-12 07:56:44.380 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-08-12 07:56:44.380 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-08-12 07:56:44.381 [http-nio-5000-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-12 07:56:44.382 [http-nio-5000-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [image/webp, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-12 07:56:44.382 [http-nio-5000-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 12 07:56:44 CST 2020, status=404, error=Not Found, message=No message available,  (truncated)...]
+2020-08-12 07:56:44.386 [http-nio-5000-exec-6] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/error] from: 127.0.0.1 costs: 5ms
+2020-08-12 07:56:44.387 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-08-12 07:56:44.436 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/assets/2020/08/10/a7f5d3e1199f4dd48d537c465f025ed7.jpg", parameters={}
+2020-08-12 07:56:44.438 [http-nio-5000-exec-5] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["file:E:\Mfans\CMS\deep-forest\assets/"]
+2020-08-12 07:56:44.462 [http-nio-5000-exec-5] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2020/08/10/a7f5d3e1199f4dd48d537c465f025ed7.jpg] from: 127.0.0.1 costs: 23ms
+2020-08-12 07:56:44.462 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-12 07:56:51.978 [http-nio-5000-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/v1/banner-item/19", parameters={}
+2020-08-12 07:56:51.979 [http-nio-5000-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerItemController#delete(Integer)
+2020-08-12 07:56:51.980 [http-nio-5000-exec-4] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/banner-item/19] from: 127.0.0.1 costs: 0ms
+2020-08-12 07:56:51.981 [http-nio-5000-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-12 07:56:51.993 [http-nio-5000-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - DELETE "/v1/banner-item/19", parameters={}
+2020-08-12 07:56:51.993 [http-nio-5000-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerItemController#delete(Integer)
+2020-08-12 07:56:52.020 [http-nio-5000-exec-7] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectById - ==>  Preparing: SELECT id,name,img,keyword,type,banner_id,create_time,update_time,delete_time FROM banner_item WHERE id=? AND delete_time IS NULL 
+2020-08-12 07:56:52.020 [http-nio-5000-exec-7] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectById - ==> Parameters: 19(Integer)
+2020-08-12 07:56:52.021 [http-nio-5000-exec-7] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectById - <==      Total: 1
+2020-08-12 07:56:52.023 [http-nio-5000-exec-7] DEBUG i.g.t.latticy.mapper.BannerItemMapper.deleteById - ==>  Preparing: UPDATE banner_item SET delete_time=NOW() WHERE id=? AND delete_time IS NULL 
+2020-08-12 07:56:52.023 [http-nio-5000-exec-7] DEBUG i.g.t.latticy.mapper.BannerItemMapper.deleteById - ==> Parameters: 19(Integer)
+2020-08-12 07:56:52.252 [http-nio-5000-exec-7] DEBUG i.g.t.latticy.mapper.BannerItemMapper.deleteById - <==    Updates: 1
+2020-08-12 07:56:52.353 [http-nio-5000-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-12 07:56:52.354 [http-nio-5000-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [UnifyResponseVO(code=3, message=删除成功, request=DELETE /v1/banner-item/19)]
+2020-08-12 07:56:52.358 [http-nio-5000-exec-7] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [DELETE] -> [/v1/banner-item/19] from: 127.0.0.1 costs: 364ms
+2020-08-12 07:56:52.359 [http-nio-5000-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 201 CREATED
+2020-08-12 08:00:15.240 [http-nio-5000-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v1/banner/11", parameters={}
+2020-08-12 08:00:15.241 [http-nio-5000-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#getWithItems(Integer)
+2020-08-12 08:00:15.247 [http-nio-5000-exec-10] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - ==>  Preparing: SELECT id,name,title,description,img,create_time,update_time,delete_time FROM banner WHERE id=? AND delete_time IS NULL 
+2020-08-12 08:00:15.247 [http-nio-5000-exec-10] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - ==> Parameters: 11(Integer)
+2020-08-12 08:00:15.248 [http-nio-5000-exec-10] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - <==      Total: 1
+2020-08-12 08:00:15.250 [http-nio-5000-exec-10] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - ==>  Preparing: SELECT id,name,img,keyword,type,banner_id,create_time,update_time,delete_time FROM banner_item WHERE delete_time IS NULL AND (banner_id = ?) 
+2020-08-12 08:00:15.250 [http-nio-5000-exec-10] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - ==> Parameters: 11(Integer)
+2020-08-12 08:00:15.251 [http-nio-5000-exec-10] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - <==      Total: 0
+2020-08-12 08:00:15.252 [http-nio-5000-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-12 08:00:15.252 [http-nio-5000-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [BannerWithItemsBO(id=11, name=测试1, title=Test-one, img=http://localhost:5000/assets/2020/08/10/2ca0c (truncated)...]
+2020-08-12 08:00:15.254 [http-nio-5000-exec-10] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/banner/11] from: 127.0.0.1 costs: 12ms
+2020-08-12 08:00:15.254 [http-nio-5000-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-12 08:00:15.355 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/assets/2020/08/10/2ca0c139328c4f8896d08f34e4cba1a5.png", parameters={}
+2020-08-12 08:00:15.356 [http-nio-5000-exec-1] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["file:E:\Mfans\CMS\deep-forest\assets/"]
+2020-08-12 08:00:15.357 [http-nio-5000-exec-1] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2020-08-12 08:00:15.359 [http-nio-5000-exec-1] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2020/08/10/2ca0c139328c4f8896d08f34e4cba1a5.png] from: 127.0.0.1 costs: 2ms
+2020-08-12 08:00:15.360 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-08-12 08:00:15.361 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-08-12 08:00:15.362 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-12 08:00:15.362 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [image/webp, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-12 08:00:15.363 [http-nio-5000-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 12 08:00:15 CST 2020, status=404, error=Not Found, message=No message available,  (truncated)...]
+2020-08-12 08:00:15.364 [http-nio-5000-exec-1] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/error] from: 127.0.0.1 costs: 2ms
+2020-08-12 08:00:15.364 [http-nio-5000-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-08-12 08:00:16.650 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v1/banner/page?page=1&count=10", parameters={masked}
+2020-08-12 08:00:16.651 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#getBanners(Integer, Integer)
+2020-08-12 08:00:16.655 [http-nio-5000-exec-2] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM banner WHERE delete_time IS NULL 
+2020-08-12 08:00:16.655 [http-nio-5000-exec-2] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==> Parameters: 
+2020-08-12 08:00:16.657 [http-nio-5000-exec-2] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==>  Preparing: SELECT id,name,title,description,img,create_time,update_time,delete_time FROM banner WHERE delete_time IS NULL LIMIT ?,? 
+2020-08-12 08:00:16.658 [http-nio-5000-exec-2] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2020-08-12 08:00:16.660 [http-nio-5000-exec-2] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - <==      Total: 3
+2020-08-12 08:00:16.663 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-12 08:00:16.663 [http-nio-5000-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [PageResponseVO(total=3, items=[io.github.talelin.latticy.model.BannerDO@23d37d79, io.github.talelin. (truncated)...]
+2020-08-12 08:00:16.665 [http-nio-5000-exec-2] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/banner/page] from: 127.0.0.1 costs: 14ms
+2020-08-12 08:00:16.666 [http-nio-5000-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-12 08:00:16.724 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/assets/2020/08/10/2ca0c139328c4f8896d08f34e4cba1a5.png", parameters={}
+2020-08-12 08:00:16.727 [http-nio-5000-exec-3] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["file:E:\Mfans\CMS\deep-forest\assets/"]
+2020-08-12 08:00:16.729 [http-nio-5000-exec-3] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2020-08-12 08:00:16.730 [http-nio-5000-exec-3] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2020/08/10/2ca0c139328c4f8896d08f34e4cba1a5.png] from: 127.0.0.1 costs: 1ms
+2020-08-12 08:00:16.730 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-08-12 08:00:16.730 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-08-12 08:00:16.731 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-12 08:00:16.732 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [image/webp, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-12 08:00:16.732 [http-nio-5000-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 12 08:00:16 CST 2020, status=404, error=Not Found, message=No message available,  (truncated)...]
+2020-08-12 08:00:16.734 [http-nio-5000-exec-3] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/error] from: 127.0.0.1 costs: 3ms
+2020-08-12 08:00:16.734 [http-nio-5000-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-08-12 08:00:19.537 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v1/banner/2", parameters={}
+2020-08-12 08:00:19.538 [http-nio-5000-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#getWithItems(Integer)
+2020-08-12 08:00:19.543 [http-nio-5000-exec-6] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - ==>  Preparing: SELECT id,name,title,description,img,create_time,update_time,delete_time FROM banner WHERE id=? AND delete_time IS NULL 
+2020-08-12 08:00:19.544 [http-nio-5000-exec-6] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - ==> Parameters: 2(Integer)
+2020-08-12 08:00:19.547 [http-nio-5000-exec-6] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - <==      Total: 1
+2020-08-12 08:00:19.550 [http-nio-5000-exec-6] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - ==>  Preparing: SELECT id,name,img,keyword,type,banner_id,create_time,update_time,delete_time FROM banner_item WHERE delete_time IS NULL AND (banner_id = ?) 
+2020-08-12 08:00:19.551 [http-nio-5000-exec-6] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - ==> Parameters: 2(Integer)
+2020-08-12 08:00:19.553 [http-nio-5000-exec-6] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - <==      Total: 3
+2020-08-12 08:00:19.554 [http-nio-5000-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-12 08:00:19.555 [http-nio-5000-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [BannerWithItemsBO(id=2, name=b-2, title=null, img=http://i2.sleeve.7yue.pro/m4.png, description=热销商品 (truncated)...]
+2020-08-12 08:00:19.558 [http-nio-5000-exec-6] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/banner/2] from: 127.0.0.1 costs: 19ms
+2020-08-12 08:00:19.558 [http-nio-5000-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-12 08:00:35.471 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v1/banner/page?page=1&count=10", parameters={masked}
+2020-08-12 08:00:35.472 [http-nio-5000-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#getBanners(Integer, Integer)
+2020-08-12 08:00:35.477 [http-nio-5000-exec-5] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM banner WHERE delete_time IS NULL 
+2020-08-12 08:00:35.478 [http-nio-5000-exec-5] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==> Parameters: 
+2020-08-12 08:00:35.479 [http-nio-5000-exec-5] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==>  Preparing: SELECT id,name,title,description,img,create_time,update_time,delete_time FROM banner WHERE delete_time IS NULL LIMIT ?,? 
+2020-08-12 08:00:35.480 [http-nio-5000-exec-5] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2020-08-12 08:00:35.481 [http-nio-5000-exec-5] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectPage - <==      Total: 3
+2020-08-12 08:00:35.482 [http-nio-5000-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-12 08:00:35.483 [http-nio-5000-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [PageResponseVO(total=3, items=[io.github.talelin.latticy.model.BannerDO@14e349b2, io.github.talelin. (truncated)...]
+2020-08-12 08:00:35.484 [http-nio-5000-exec-5] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/banner/page] from: 127.0.0.1 costs: 11ms
+2020-08-12 08:00:35.484 [http-nio-5000-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-12 08:00:35.536 [http-nio-5000-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/assets/2020/08/10/2ca0c139328c4f8896d08f34e4cba1a5.png", parameters={}
+2020-08-12 08:00:35.537 [http-nio-5000-exec-4] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["file:E:\Mfans\CMS\deep-forest\assets/"]
+2020-08-12 08:00:35.538 [http-nio-5000-exec-4] DEBUG o.s.w.servlet.resource.ResourceHttpRequestHandler - Resource not found
+2020-08-12 08:00:35.538 [http-nio-5000-exec-4] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2020/08/10/2ca0c139328c4f8896d08f34e4cba1a5.png] from: 127.0.0.1 costs: 0ms
+2020-08-12 08:00:35.538 [http-nio-5000-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-08-12 08:00:35.539 [http-nio-5000-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-08-12 08:00:35.540 [http-nio-5000-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-08-12 08:00:35.541 [http-nio-5000-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [image/webp, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-12 08:00:35.541 [http-nio-5000-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Wed Aug 12 08:00:35 CST 2020, status=404, error=Not Found, message=No message available,  (truncated)...]
+2020-08-12 08:00:35.542 [http-nio-5000-exec-4] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/error] from: 127.0.0.1 costs: 2ms
+2020-08-12 08:00:35.542 [http-nio-5000-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-08-12 08:00:37.231 [http-nio-5000-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v1/banner/2", parameters={}
+2020-08-12 08:00:37.232 [http-nio-5000-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.talelin.latticy.controller.v1.BannerController#getWithItems(Integer)
+2020-08-12 08:00:37.236 [http-nio-5000-exec-7] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - ==>  Preparing: SELECT id,name,title,description,img,create_time,update_time,delete_time FROM banner WHERE id=? AND delete_time IS NULL 
+2020-08-12 08:00:37.236 [http-nio-5000-exec-7] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - ==> Parameters: 2(Integer)
+2020-08-12 08:00:37.238 [http-nio-5000-exec-7] DEBUG i.g.talelin.latticy.mapper.BannerMapper.selectById - <==      Total: 1
+2020-08-12 08:00:37.240 [http-nio-5000-exec-7] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - ==>  Preparing: SELECT id,name,img,keyword,type,banner_id,create_time,update_time,delete_time FROM banner_item WHERE delete_time IS NULL AND (banner_id = ?) 
+2020-08-12 08:00:37.240 [http-nio-5000-exec-7] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - ==> Parameters: 2(Integer)
+2020-08-12 08:00:37.243 [http-nio-5000-exec-7] DEBUG i.g.t.latticy.mapper.BannerItemMapper.selectList - <==      Total: 3
+2020-08-12 08:00:37.244 [http-nio-5000-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-08-12 08:00:37.246 [http-nio-5000-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [BannerWithItemsBO(id=2, name=b-2, title=null, img=http://i2.sleeve.7yue.pro/m4.png, description=热销商品 (truncated)...]
+2020-08-12 08:00:37.248 [http-nio-5000-exec-7] INFO  i.g.t.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/banner/2] from: 127.0.0.1 costs: 15ms
+2020-08-12 08:00:37.249 [http-nio-5000-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2020-08-12 12:03:24.376 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h27m22s417ms487µs800ns).
+2020-08-12 17:29:04.898 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m39s879ms53µs600ns).

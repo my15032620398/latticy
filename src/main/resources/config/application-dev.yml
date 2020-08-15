@@ -1,0 +1,50 @@
+#开发环境配置
+
+server:
+  # 服务端口
+  port: 5000
+
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    platform: mysql
+    url: jdbc:mysql://localhost:3306/sevencell?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8
+    username: root
+    password: 123456
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT1FROMDUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    filters: stat,wall,log4j
+    logSlowSql: true
+
+
+# 开启权限拦截
+auth:
+  enabled: true
+
+
+# 开启http请求日志记录
+request-log:
+  enabled: true
+
+
+logging:
+  level:
+    # web信息日志记录
+    web: debug
+    # SQL日志记录
+    io.github.talelin.latticy.mapper: debug
+
+
+
+

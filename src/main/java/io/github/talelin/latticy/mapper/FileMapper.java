@@ -18,4 +18,6 @@ public interface FileMapper extends BaseMapper<FileDO> {
     String selectByName(String name);
 
     void deleteByName(String name);
+
+    FileDO selectImgByName(String name);
 }

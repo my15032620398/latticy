@@ -1,6 +1,5 @@
 package io.github.talelin.latticy.controller.cms;
 
-import io.github.talelin.core.annotation.LoginRequired;
 import io.github.talelin.latticy.bo.FileBO;
 import io.github.talelin.latticy.service.FileService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,5 +42,9 @@ public class FileController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    @DeleteMapping("/byName/{name}")
+    public void deleteByName(@PathVariable  String name){
+        fileService.deleteImgByName(name);
     }
 }

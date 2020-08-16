@@ -2,8 +2,6 @@ package io.github.talelin.latticy.controller.v1;
 
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import io.github.talelin.core.annotation.GroupRequired;
-import io.github.talelin.core.annotation.LoginRequired;
 import io.github.talelin.core.annotation.PermissionMeta;
 import io.github.talelin.core.annotation.PermissionModule;
 import io.github.talelin.latticy.common.enumeration.CategoryRootOrNotEnum;
@@ -40,8 +38,8 @@ public class CategoryController {
     private CategoryService categoryService;
 
     @PostMapping("")
-    @PermissionMeta(value = "创建分类")
-    @GroupRequired
+//    @PermissionMeta(value = "创建分类")
+//    @GroupRequired
     public CreatedVO create(@Validated @RequestBody CategoryDTO dto) {
         CategoryDO categoryDO = new CategoryDO();
         BeanUtils.copyProperties(dto, categoryDO);
@@ -60,7 +58,7 @@ public class CategoryController {
 
     @DeleteMapping("/{id}")
     @PermissionMeta(value = "删除分类")
-    @GroupRequired
+//    @GroupRequired
     public DeletedVO delete(
             @PathVariable @Positive(message = "{id.positive}") Integer id) {
         categoryService.deleteCategory(id);

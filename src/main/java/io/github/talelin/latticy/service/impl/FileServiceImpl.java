@@ -1,26 +1,21 @@
 package io.github.talelin.latticy.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import io.github.talelin.latticy.bo.FileBO;
+import io.github.talelin.latticy.mapper.FileMapper;
+import io.github.talelin.latticy.model.FileDO;
 import io.github.talelin.latticy.module.file.FileConstant;
 import io.github.talelin.latticy.module.file.FileProperties;
 import io.github.talelin.latticy.module.file.Uploader;
-import io.github.talelin.latticy.mapper.FileMapper;
-import io.github.talelin.latticy.model.FileDO;
 import io.github.talelin.latticy.service.FileService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.util.MultiValueMap;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -101,6 +96,20 @@ public class FileServiceImpl extends ServiceImpl<FileMapper, FileDO> implements 
             String fullPath = property+"\\assets\\"+fileDO.getPath();
             uploader.deleteImg(fullPath);
             baseMapper.deleteById(id);
+        }
+    }
+
+    @Override
+    public void deleteImgByName(String name) {
+        FileMapper baseMapper = this.getBaseMapper();
+        String property = System.getProperty("user.dir");
+        FileDO fileDO = baseMapper.selectImgByName(name);
+        if(StringUtils.isEmpty(fileDO.getPath())){
+            return ;
+        }else {
+            String fullPath = property+"\\assets\\"+fileDO.getPath();
+            uploader.deleteImg(fullPath);
+            baseMapper.deleteByName(name);
         }
     }
 }

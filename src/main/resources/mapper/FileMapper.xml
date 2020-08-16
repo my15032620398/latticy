@@ -34,6 +34,9 @@
     <select id="selectByName" resultType="string">
         select f.path from  lin_file f where f.name= #{name}
     </select>
+    <select id="selectImgByName" resultMap="BaseResultMap">
+        select * from  lin_file f where f.name= #{name}
+    </select>
     <delete id="deleteByName">
         delete from lin_file f where f.name = #{name}
     </delete>

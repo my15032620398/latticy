@@ -35,4 +35,10 @@ public interface FileService extends IService<FileDO> {
      * @param name
      */
     void deleteImg(Integer name) throws IOException;
+
+    /**
+     * 根据名字删除文件
+     * @param name
+     */
+    void deleteImgByName(String name);
 }

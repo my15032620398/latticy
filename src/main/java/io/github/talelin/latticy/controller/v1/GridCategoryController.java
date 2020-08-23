@@ -2,7 +2,6 @@ package io.github.talelin.latticy.controller.v1;
 
 
 import io.github.talelin.autoconfigure.exception.NotFoundException;
-import io.github.talelin.core.annotation.GroupRequired;
 import io.github.talelin.core.annotation.LoginRequired;
 import io.github.talelin.core.annotation.PermissionMeta;
 import io.github.talelin.core.annotation.PermissionModule;
@@ -34,7 +33,7 @@ public class GridCategoryController {
 
     @PostMapping("")
     @PermissionMeta(value = "创建六宫格")
-    @GroupRequired
+//    @GroupRequired
     public CreatedVO create(@Validated @RequestBody GridCategoryDTO dto) {
         gridCategoryService.createGridCategory(dto);
         return new CreatedVO();
@@ -42,7 +41,7 @@ public class GridCategoryController {
 
     @PutMapping("/{id}")
     @PermissionMeta(value = "更新六宫格")
-    @GroupRequired
+//    @GroupRequired
     public UpdatedVO update(
             @Validated @RequestBody GridCategoryDTO dto,
             @PathVariable @Positive(message = "{id.positive}") Integer id) {
@@ -52,7 +51,7 @@ public class GridCategoryController {
 
     @DeleteMapping("/{id}")
     @PermissionMeta(value = "删除六宫格")
-    @GroupRequired
+//    @GroupRequired
     public DeletedVO delete(@PathVariable @Positive(message = "{id.positive}") Integer id) {
         gridCategoryService.deleteGridCategory(id);
         return new DeletedVO();

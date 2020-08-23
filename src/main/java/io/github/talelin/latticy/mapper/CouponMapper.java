@@ -15,4 +15,6 @@ public interface CouponMapper extends BaseMapper<CouponDO> {
 
     List<Integer> getCouponsByActivityId(@Param("id") Integer id);
 
+
+
 }

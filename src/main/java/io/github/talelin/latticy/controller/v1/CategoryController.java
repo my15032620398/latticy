@@ -99,11 +99,17 @@ public class CategoryController {
         return PageUtil.build(paging);
     }
     
-    @GetMapping("/list")
+    @GetMapping("/sub/list")
     //@LoginRequired
     public List<CategoryDO> getList() {
         val notRoot = CategoryRootOrNotEnum.NOT_ROOT;
         return this.categoryService.lambdaQuery().eq(CategoryDO::getIsRoot, notRoot).list();
+    }
+    @GetMapping("/root/list")
+    //@LoginRequired
+    public List<CategoryDO> getRootList() {
+        val root = CategoryRootOrNotEnum.ROOT;
+        return this.categoryService.lambdaQuery().eq(CategoryDO::getIsRoot, root.getValue()).list();
     }
 
 }

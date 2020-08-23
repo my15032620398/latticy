@@ -27,4 +27,8 @@ public class GridCategoryDTO {
     @Positive
     private Integer categoryId;
 
+    @NotNull
+    @Positive
+    private Integer rootCategoryId;
+
 }

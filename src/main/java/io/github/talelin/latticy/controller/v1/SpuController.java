@@ -64,7 +64,6 @@ public class SpuController {
     }
 
     @GetMapping("/{id}/detail")
-    @LoginRequired
     public SpuDetailDO getDetail(@PathVariable(value = "id") @Positive Integer id) {
         SpuDetailDO detail = this.spuService.getDetail(id);
         return detail;
@@ -77,7 +76,7 @@ public class SpuController {
     }
 
     @GetMapping("/page")
-    @LoginRequired
+//    @LoginRequired
     public PageResponseVO<SpuDO> page(
             @RequestParam(name = "count", required = false, defaultValue = "10")
             @Min(value = 1, message = "{page.count.min}")
@@ -85,7 +84,7 @@ public class SpuController {
             @RequestParam(name = "page", required = false, defaultValue = "0")
             @Min(value = 0, message = "{page.number.min}") Integer page
     ) {
-        Page<SpuDO> pager = new Page<>(page, count);
+        Page<SpuDO> pager = new Page<>(page-1, count);
         IPage<SpuDO> paging = spuService.getBaseMapper().selectPage(pager, null);
         return PageUtil.build(paging);
     }

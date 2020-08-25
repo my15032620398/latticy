@@ -81,7 +81,7 @@ public class SkuController {
     }
 
     @GetMapping("/page")
-    @LoginRequired
+//    @LoginRequired
     public PageResponseVO<SkuDO> page(
             @RequestParam(name = "count", required = false, defaultValue = "10")
             @Min(value = 1, message = "{page.count.min}")
@@ -89,7 +89,7 @@ public class SkuController {
             @RequestParam(name = "page", required = false, defaultValue = "0")
             @Min(value = 0, message = "{page.number.min}") Integer page
     ) {
-        Page<SkuDO> pager = new Page<>(page, count);
+        Page<SkuDO> pager = new Page<>(page-1, count);
         IPage<SkuDO> paging = skuService.getBaseMapper().selectPage(pager, null);
         return PageUtil.build(paging);
     }

@@ -35,7 +35,7 @@ public class SpecValueController {
 
     @PostMapping("")
     @PermissionMeta("创建规格值")
-    @GroupRequired
+//    @GroupRequired
     public CreatedVO create(@Validated @RequestBody SpecValueDTO dto) {
         specValueService.create(dto);
         return new CreatedVO();
@@ -43,7 +43,7 @@ public class SpecValueController {
 
     @PutMapping("/{id}")
     @PermissionMeta("更新规格值")
-    @GroupRequired
+//    @GroupRequired
     public UpdatedVO update(
             @Validated @RequestBody SpecValueDTO dto,
             @PathVariable @Positive(message = "{id.positive}") Integer id) {

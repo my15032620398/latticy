@@ -40,7 +40,7 @@ public class SpecKeyController {
 
     @PostMapping("")
     @PermissionMeta(value = "创建规格名")
-    @GroupRequired
+//    @GroupRequired
     public CreatedVO create(@Validated @RequestBody SpecKeyDTO dto) {
         specKeyService.create(dto);
         return new CreatedVO();
@@ -48,7 +48,7 @@ public class SpecKeyController {
 
     @PutMapping("/{id}")
     @PermissionMeta(value = "更新规格名")
-    @GroupRequired
+//    @GroupRequired
     public UpdatedVO update(
             @Validated @RequestBody SpecKeyDTO dto,
             @PathVariable @Positive(message = "{id.positive}") Integer id) {
@@ -84,7 +84,7 @@ public class SpecKeyController {
             @RequestParam(name = "page", required = false, defaultValue = "0")
             @Min(value = 0, message = "{page.number.min}") Integer page
     ) {
-        Page<SpecKeyDO> pager = new Page<>(page, count);
+        Page<SpecKeyDO> pager = new Page<>(page-1, count);
         IPage<SpecKeyDO> paging = specKeyService.getBaseMapper().selectPage(pager, null);
         return PageUtil.build(paging);
     }

@@ -58,7 +58,7 @@ public class SpecKeyController {
 
     @DeleteMapping("/{id}")
     @PermissionMeta(value = "删除规格名")
-    @GroupRequired
+//    @GroupRequired
     public DeletedVO delete(@PathVariable @Positive(message = "{id.positive}") Integer id) {
         specKeyService.delete(id);
         return new DeletedVO();

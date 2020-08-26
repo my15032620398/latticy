@@ -84,13 +84,14 @@ public class SpecKeyService extends ServiceImpl<SpecKeyMapper, SpecKeyDO> {
         });
 
     }
-
+    @Transactional(rollbackFor = Exception.class)
     public void delete(Integer id) {
         SpecKeyDO specKey = this.getById(id);
         if (specKey == null) {
             throw new NotFoundException(60001);
         }
         this.getBaseMapper().deleteById(id);
+        specValueMapper.deleteBySpecId(id);
     }
 
     public SpecKeyAndItemsBO getKeyAndValuesById(Integer id) {

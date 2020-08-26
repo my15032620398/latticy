@@ -1,4 +1,5 @@
 package io.github.talelin.latticy.mapper;
+import org.apache.ibatis.annotations.Param;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import io.github.talelin.latticy.model.SpecKeyValueDO;
@@ -22,6 +23,15 @@ public interface SpecValueMapper extends BaseMapper<SpecValueDO> {
      * @param valueId 规格值id
      * @return SpecKeyValueDO
      */
-    SpecKeyValueDO getSpecKeyAndValueById(Integer keyId, Integer valueId);
+    SpecKeyValueDO getSpecKeyAndValueById(@Param("keyId") Integer keyId, @Param("valueId") Integer valueId);
+
+    /**
+     * 根据specId删除specValue
+     * @param specId
+     * @return
+     */
+    int deleteBySpecId(@Param("specId")Integer specId);
+
+
 
 }

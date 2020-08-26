@@ -53,7 +53,7 @@ public class SpecValueController {
 
     @DeleteMapping("/{id}")
     @PermissionMeta("删除规格值")
-    @GroupRequired
+//    @GroupRequired
     public DeletedVO delete(@PathVariable @Positive(message = "{id.positive}") Integer id) {
         specValueService.delete(id);
         return new DeletedVO();

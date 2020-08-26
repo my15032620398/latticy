@@ -57,6 +57,7 @@ public class SpecValueController {
     public DeletedVO delete(@PathVariable @Positive(message = "{id.positive}") Integer id) {
         specValueService.delete(id);
         return new DeletedVO();
+
     }
 
     @GetMapping("/{id}")

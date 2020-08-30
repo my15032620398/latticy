@@ -58,8 +58,8 @@
           AND s.delete_time IS NULL
     </select>
 
-    <select id="getSpecKeys" resultType="java.lang.Integer">
-        select s.spec_key_id from spu_key s where s.spu_id = #{id}
+    <select id="getSpecKeys" resultType="hashmap">
+        select s.id,s.name from spu_key sk inner join spec_key s on sk.spec_key_id = s.id where sk.spu_id = #{id}
     </select>
 
 </mapper>

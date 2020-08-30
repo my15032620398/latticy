@@ -5,6 +5,7 @@ import io.github.talelin.latticy.model.SpuDO;
 import io.github.talelin.latticy.model.SpuDetailDO;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -29,6 +30,6 @@ public interface SpuMapper extends BaseMapper<SpuDO> {
      * @param id spu的id
      * @return spu关联的规格id列表
      */
-    List<Integer> getSpecKeys(@Param("id") Integer id);
+    List<HashMap> getSpecKeys(@Param("id") Integer id);
 
 }

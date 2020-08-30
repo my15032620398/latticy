@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Positive;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -70,8 +71,8 @@ public class SpuController {
     }
 
     @GetMapping("/key")
-    @LoginRequired
-    public List<Integer> getSpecKeys(@RequestParam(name = "id") @Positive(message = "{id}") Integer id) {
+//    @LoginRequired
+    public List<HashMap> getSpecKeys(@RequestParam(name = "id") @Positive(message = "{id}") Integer id) {
         return spuService.getBaseMapper().getSpecKeys(id);
     }
 

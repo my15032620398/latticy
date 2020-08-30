@@ -75,7 +75,7 @@ public class SkuController {
     }
 
     @GetMapping("/by/spu/{id}")
-    @LoginRequired
+//    @LoginRequired
     public List<SkuDO> getBySpuId(@PathVariable(value = "id") @Positive Integer spuId) {
         return this.skuService.lambdaQuery().eq(SkuDO::getSpuId, spuId).list();
     }

@@ -2,7 +2,6 @@ package io.github.talelin.latticy.controller.v1;
 
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import io.github.talelin.core.annotation.GroupRequired;
 import io.github.talelin.core.annotation.LoginRequired;
 import io.github.talelin.core.annotation.PermissionMeta;
 import io.github.talelin.core.annotation.PermissionModule;
@@ -90,7 +89,7 @@ public class SpecKeyController {
     }
 
     @GetMapping("/list")
-    @LoginRequired
+//    @LoginRequired
     public List<SpecKeyDO> getList() {
         return specKeyService.list();
     }

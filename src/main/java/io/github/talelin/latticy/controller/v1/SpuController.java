@@ -49,7 +49,7 @@ public class SpuController {
 
     @PutMapping("/{id}")
     @PermissionMeta("更新SPU")
-    @GroupRequired
+//    @GroupRequired
     public UpdatedVO update(@RequestBody @Validated SpuDTO dto,
                             @PathVariable @Positive(message = "{id.positive}") Integer id) {
         spuService.update(dto, id);

@@ -41,7 +41,7 @@ public class SpuController {
 
     @PostMapping("")
     @PermissionMeta("创建SPU")
-    @GroupRequired
+//    @GroupRequired
     public CreatedVO create(@RequestBody @Validated SpuDTO dto) {
         this.spuService.create(dto);
         return new CreatedVO();

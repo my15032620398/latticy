@@ -33,7 +33,6 @@ public class FileController {
     public List<FileBO> upload(MultipartHttpServletRequest multipartHttpServletRequest) throws InterruptedException {
         MultiValueMap<String, MultipartFile> fileMap =
                 multipartHttpServletRequest.getMultiFileMap();
-        Thread.sleep(5000);
         return fileService.upload(fileMap);
     }
     @DeleteMapping("/{id}")

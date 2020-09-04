@@ -14,5 +14,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface BannerItemMapper extends BaseMapper<BannerItemDO> {
-
 }

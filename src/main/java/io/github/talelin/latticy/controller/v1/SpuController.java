@@ -58,7 +58,7 @@ public class SpuController {
 
     @DeleteMapping("/{id}")
     @PermissionMeta("删除SPU")
-    @GroupRequired
+//    @GroupRequired
     public DeletedVO delete(@PathVariable @Positive(message = "{id.positive}") Integer id) {
         spuService.delete(id);
         return new DeletedVO();

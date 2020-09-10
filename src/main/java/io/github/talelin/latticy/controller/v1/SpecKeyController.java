@@ -8,6 +8,7 @@ import io.github.talelin.core.annotation.PermissionModule;
 import io.github.talelin.latticy.bo.SpecKeyAndItemsBO;
 import io.github.talelin.latticy.common.mybatis.Page;
 import io.github.talelin.latticy.common.util.PageUtil;
+import io.github.talelin.latticy.dto.SpecDTO;
 import io.github.talelin.latticy.dto.SpecKeyDTO;
 import io.github.talelin.latticy.model.SpecKeyDO;
 import io.github.talelin.latticy.service.SpecKeyService;
@@ -23,6 +24,7 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Positive;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author generator@TaleLin
@@ -63,10 +65,12 @@ public class SpecKeyController {
         return new DeletedVO();
     }
 
-    @GetMapping("/{id}/detail")
-    @LoginRequired
-    public SpecKeyAndItemsBO detail(@PathVariable @Positive(message = "{id}") Integer id) {
-        SpecKeyAndItemsBO specKeyAndItems = specKeyService.getKeyAndValuesById(id);
+    @GetMapping("/{spuId}/detail")
+//    @LoginRequired
+    public List<SpecKeyAndItemsBO> detail(@PathVariable @Positive(message = "{spuId}") Integer spuId) {
+        List<SpecKeyDO> spuKeyDos = this.specKeyService.getBySpuId(spuId);
+        List<Integer> spuKeys = spuKeyDos.stream().map(specKeyDO -> specKeyDO.getId()).collect(Collectors.toList());
+        List<SpecKeyAndItemsBO> specKeyAndItems = specKeyService.getKeyAndValuesById(spuKeys);
         return specKeyAndItems;
     }
 

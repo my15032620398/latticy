@@ -23,6 +23,8 @@ public class SpecKeyAndItemsBO {
 
     private String description;
 
+    private Integer selectedValue;
+
     private List<SpecValueDO> items;
 
     public SpecKeyAndItemsBO(SpecKeyDO specKey, List<SpecValueDO> items) {

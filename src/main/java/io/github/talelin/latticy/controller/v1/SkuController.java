@@ -54,7 +54,7 @@ public class SkuController {
 
     @PutMapping("/{id}")
     @PermissionMeta("更新SKU")
-    @GroupRequired
+//    @GroupRequired
     public UpdatedVO update(@RequestBody @Validated SkuDTO dto,
                             @PathVariable @Positive(message = "{id.positive}") Integer id) {
         skuService.update(dto, id);

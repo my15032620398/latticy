@@ -94,16 +94,20 @@ public class SpecKeyService extends ServiceImpl<SpecKeyMapper, SpecKeyDO> {
         specValueMapper.deleteBySpecId(id);
     }
 
-    public SpecKeyAndItemsBO getKeyAndValuesById(Integer id) {
-        SpecKeyDO specKey = this.getById(id);
-        if (specKey == null) {
-            throw new NotFoundException(60001);
-        }
-        QueryWrapper<SpecValueDO> wrapper = new QueryWrapper<>();
-        wrapper.lambda().eq(SpecValueDO::getSpecId, specKey.getId());
-        List<SpecValueDO> items = specValueMapper.selectList(wrapper);
-        SpecKeyAndItemsBO specKeyAndItems = new SpecKeyAndItemsBO(specKey, items);
-        return specKeyAndItems;
+    public List<SpecKeyAndItemsBO> getKeyAndValuesById(List<Integer> ids) {
+        ArrayList<SpecKeyAndItemsBO> specKeyAndItemsBOS = new ArrayList<>();
+        ids.stream().forEach(id->{
+            SpecKeyDO specKey = this.getById(id);
+            if (specKey == null) {
+                throw new NotFoundException(60001);
+            }
+            QueryWrapper<SpecValueDO> wrapper = new QueryWrapper<>();
+            wrapper.lambda().eq(SpecValueDO::getSpecId, specKey.getId());
+            List<SpecValueDO> items = specValueMapper.selectList(wrapper);
+            SpecKeyAndItemsBO specKeyAndItems = new SpecKeyAndItemsBO(specKey, items);
+            specKeyAndItemsBOS.add(specKeyAndItems);
+        });
+        return specKeyAndItemsBOS;
     }
 
     public List<SpecKeyDO> getBySpuId(Integer spuId) {

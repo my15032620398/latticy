@@ -95,5 +95,9 @@ public class SpuController {
     public List<SpuDO> getList() {
         return spuService.list();
     }
-
+    @GetMapping("/{id}")
+    public SpuDO getById(@PathVariable Integer id){
+        SpuDO spuDO = spuService.getBaseMapper().selectById(id);
+        return spuDO;
+    }
 }

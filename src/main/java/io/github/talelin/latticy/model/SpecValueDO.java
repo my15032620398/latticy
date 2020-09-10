@@ -35,8 +35,4 @@ public class SpecValueDO {
     private Integer specId;
 
     private String extend;
-
-
-
-
 }

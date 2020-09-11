@@ -91,7 +91,7 @@ public class SpuController {
     }
 
     @GetMapping("/list")
-    @LoginRequired
+//    @LoginRequired
     public List<SpuDO> getList() {
         return spuService.list();
     }

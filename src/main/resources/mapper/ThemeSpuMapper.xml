@@ -10,7 +10,7 @@
     </resultMap>
 
     <select id="getSimplifySpus" resultType="io.github.talelin.latticy.model.SpuDO">
-        select s.id id, s.title
+        select s.id id, s.title title,s.subtitle subtitle,s.img img
         from spu s
         where s.delete_time is null
         and

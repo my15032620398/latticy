@@ -49,7 +49,7 @@ public class ThemeController {
 
     @PutMapping("/{id}")
     @PermissionMeta("更新主题")
-    @GroupRequired
+//    @GroupRequired
     public UpdatedVO update(
             @Validated @RequestBody ThemeDTO dto,
             @PathVariable @Positive(message = "{id.positive}") Integer id) {
@@ -85,7 +85,7 @@ public class ThemeController {
     }
 
     @GetMapping("/page")
-    @LoginRequired
+//    @LoginRequired
     public PageResponseVO<ThemeDO> page(
             @RequestParam(name = "count", required = false, defaultValue = "10")
             @Min(value = 1, message = "{page.count.min}")
@@ -93,7 +93,7 @@ public class ThemeController {
             @RequestParam(name = "page", required = false, defaultValue = "0")
             @Min(value = 0, message = "{page.number.min}") Integer page
     ) {
-        Page<ThemeDO> pager = new Page<>(page, count);
+        Page<ThemeDO> pager = new Page<>(page-1, count);
         IPage<ThemeDO> paging = themeService.getBaseMapper().selectPage(pager, null);
         return PageUtil.build(paging);
     }
@@ -104,20 +104,20 @@ public class ThemeController {
      * theme下的spus以后可能会通过其它的属性进行筛选，例如 name
      */
     @GetMapping("/spus")
-    @LoginRequired
+//    @LoginRequired
     public List<SimplifySpuDO> getSpus(@RequestParam(name = "id") @Positive(message = "{id}") Integer id) {
         return themeService.getSpus(id);
     }
 
     @GetMapping("/spu/list")
-    @LoginRequired
+//    @LoginRequired
     public List<SpuDO> getSpuList(@RequestParam(name = "id") @Positive(message = "{id}") Integer id) {
         return themeService.getSimplifySpus(id);
     }
 
     @PostMapping("/spu")
     @PermissionMeta("创建专题下的spu")
-    @GroupRequired
+//    @GroupRequired
     public CreatedVO addThemeSpu(@RequestBody @Validated ThemeSpuDTO dto) {
         themeService.addThemeSpu(dto);
         return new CreatedVO();
@@ -125,7 +125,7 @@ public class ThemeController {
 
     @DeleteMapping("/spu/{id}")
     @PermissionMeta("删除专题下的spu")
-    @GroupRequired
+//    @GroupRequired
     public DeletedVO deleteThemeSpu(@PathVariable(value = "id") @Positive(message = "{id.positive}") Integer id) {
         themeService.deleteThemeSpu(id);
         return new DeletedVO();

@@ -11,7 +11,9 @@ import io.github.talelin.latticy.model.ThemeSpuDO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -39,7 +41,9 @@ public class ThemeService extends ServiceImpl<ThemeMapper, ThemeDO> {
     }
 
     public void deleteThemeSpu(Integer id) {
-        themeSpuMapper.deleteById(id);
+        Map<String, Object> param = new HashMap<>();
+        param.put("spu_id",id);
+        themeSpuMapper.deleteByMap(param);
     }
 
     public List<SpuDO> getSimplifySpus(Integer id) {

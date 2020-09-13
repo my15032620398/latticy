@@ -46,7 +46,7 @@ public class SkuController {
 
     @PostMapping("")
     @PermissionMeta("创建SKU")
-    @GroupRequired
+//    @GroupRequired
     public CreatedVO create(@RequestBody @Validated SkuDTO dto) {
         skuService.create(dto);
         return new CreatedVO();

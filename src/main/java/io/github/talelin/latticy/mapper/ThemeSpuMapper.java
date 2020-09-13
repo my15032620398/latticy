@@ -6,6 +6,7 @@ import io.github.talelin.latticy.model.ThemeSpuDO;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -24,5 +25,4 @@ public interface ThemeSpuMapper extends BaseMapper<ThemeSpuDO> {
      * @return SpuDO
      */
     List<SpuDO> getSimplifySpus(Integer id);
-
 }

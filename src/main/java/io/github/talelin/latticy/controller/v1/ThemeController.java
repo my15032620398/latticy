@@ -113,6 +113,7 @@ public class ThemeController {
 //    @LoginRequired
     public List<SpuDO> getSpuList(@RequestParam(name = "id") @Positive(message = "{id}") Integer id) {
         return themeService.getSimplifySpus(id);
+
     }
 
     @PostMapping("/spu")

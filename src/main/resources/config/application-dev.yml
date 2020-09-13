@@ -11,7 +11,7 @@ spring:
     driverClassName: com.mysql.cj.jdbc.Driver
     driver-class-name: com.mysql.cj.jdbc.Driver
     platform: mysql
-    url: jdbc:mysql://localhost:3306/sevencell?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8
+    url: jdbc:mysql://localhost:3307/sevencell?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8
     username: root
     password: 123456
     initialSize: 5

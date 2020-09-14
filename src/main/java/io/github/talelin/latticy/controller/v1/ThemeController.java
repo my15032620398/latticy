@@ -39,7 +39,7 @@ public class ThemeController {
 
     @PostMapping("")
     @PermissionMeta("创建主题")
-    @GroupRequired
+//    @GroupRequired
     public CreatedVO create(@Validated @RequestBody ThemeDTO dto) {
         ThemeDO theme = new ThemeDO();
         BeanUtils.copyProperties(dto, theme);
@@ -64,7 +64,7 @@ public class ThemeController {
 
     @DeleteMapping("/{id}")
     @PermissionMeta("删除主题")
-    @GroupRequired
+//    @GroupRequired
     public DeletedVO delete(@PathVariable @Positive(message = "{id.positive}") Integer id) {
         ThemeDO theme = themeService.getById(id);
         if (theme == null) {
@@ -113,7 +113,6 @@ public class ThemeController {
 //    @LoginRequired
     public List<SpuDO> getSpuList(@RequestParam(name = "id") @Positive(message = "{id}") Integer id) {
         return themeService.getSimplifySpus(id);
-
     }
 
     @PostMapping("/spu")

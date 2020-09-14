@@ -40,7 +40,7 @@ public class ActivityController {
 
     @PostMapping("")
     @PermissionMeta("创建活动")
-    @GroupRequired
+//    @GroupRequired
     public CreatedVO create(@RequestBody @Validated ActivityDTO dto) {
         activityService.create(dto);
         return new CreatedVO();
@@ -49,7 +49,7 @@ public class ActivityController {
 
     @PutMapping("/{id}")
     @PermissionMeta("更新活动")
-    @GroupRequired
+//    @GroupRequired
     public UpdatedVO update(
             @RequestBody @Validated ActivityDTO dto,
             @PathVariable @Positive(message = "{id.positive}") Integer id) {
@@ -59,7 +59,7 @@ public class ActivityController {
 
     @DeleteMapping("/{id}")
     @PermissionMeta("删除活动")
-    @GroupRequired
+//    @GroupRequired
     public DeletedVO delete(@PathVariable @Positive(message = "{id.positive}") Integer id) {
         ActivityDO activity = activityService.getById(id);
         if (activity == null) {
@@ -70,14 +70,14 @@ public class ActivityController {
     }
 
     @GetMapping("/{id}/detail")
-    @LoginRequired
+//    @LoginRequired
     public ActivityDetailDO get(@PathVariable(value = "id") @Positive(message = "{id.positive}") Integer id) {
         ActivityDetailDO activityDetail = activityService.getDetailById(id);
         return activityDetail;
     }
 
     @GetMapping("/page")
-    @LoginRequired
+//    @LoginRequired
     public PageResponseVO<ActivityDO> page(
             @RequestParam(name = "count", required = false, defaultValue = "10")
             @Min(value = 1, message = "{page.count.min}")
@@ -85,7 +85,7 @@ public class ActivityController {
             @RequestParam(name = "page", required = false, defaultValue = "0")
             @Min(value = 0, message = "{page.number.min}") Integer page
     ) {
-        Page<ActivityDO> pager = new Page<>(page, count);
+        Page<ActivityDO> pager = new Page<>(page-1, count);
         IPage<ActivityDO> paging = activityService.getBaseMapper().selectPage(pager, null);
         return PageUtil.build(paging);
     }

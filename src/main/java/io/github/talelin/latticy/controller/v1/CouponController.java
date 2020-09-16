@@ -77,7 +77,7 @@ public class CouponController {
     }
 
     @GetMapping("/page")
-    @LoginRequired
+//    @LoginRequired
     public PageResponseVO<CouponDO> page(
             @RequestParam(name = "count", required = false, defaultValue = "10")
             @Min(value = 1, message = "{page.count.min}")
@@ -85,7 +85,7 @@ public class CouponController {
             @RequestParam(name = "page", required = false, defaultValue = "0")
             @Min(value = 0, message = "{page.number.min}") Integer page
     ) {
-        Page<CouponDO> pager = new Page<>(page, count);
+        Page<CouponDO> pager = new Page<>(page-1, count);
         IPage<CouponDO> paging = couponService.getBaseMapper().selectPage(pager, null);
         return PageUtil.build(paging);
     }
